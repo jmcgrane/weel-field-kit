@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Expensify",
+    "status": "Perceived, not chosen",
+    "statusClass": "",
+    "when": "Comes up when a group has already looked at a US-built expense tool",
+    "angle": "US-centric, relies on existing bank card feeds rather than true card issuance, so there's a lag on data and no way to actually control spend upfront. A common near-miss for AU multi-site groups that evaluate it, then don't proceed."
+  },
+  {
+    "name": "SAP Concur",
+    "status": "Legacy incumbent",
+    "statusClass": "tier",
+    "when": "Evaluated by larger multi-site groups doing a formal software review",
+    "angle": "Expensive and heavyweight, usually rejected on cost — especially when the prospect is currently on a \"free\" bank card portal. The real objection isn't features, it's justifying spend on top of something free."
+  },
+  {
+    "name": "Navan",
+    "status": "Ruled out",
+    "statusClass": "uncommon",
+    "when": "Surfaces when a group is also shopping for travel management",
+    "angle": "Can't issue debit cards in Australia and doesn't touch accounts payable. Structurally can't cover the same ground as Weel — a clean knockout when it comes up."
+  },
+  {
+    "name": "Bank-native card portals",
+    "status": "The real incumbent",
+    "statusClass": "",
+    "when": "Westpac Spend Clarity, CBA business card exports, and similar — almost every prospect has one",
+    "angle": "Free or near-free, which is exactly why the prospect hasn't paid for anything yet. Clunky coding UX, no automated receipt chasing, no card-blocking. Usually the actual thing you're replacing, even when they say they \"haven't looked at competitors.\""
+  },
+  {
+    "name": "ApprovalMax",
+    "status": "Complementary, not competitive",
+    "statusClass": "",
+    "when": "Already in place at some multi-site dental and clinic groups for supplier invoice approval",
+    "angle": "Position Weel for card and petty-cash-style spend plus AP automation, working alongside an existing ApprovalMax setup — not ripping it out where it's already working."
+  }
+]

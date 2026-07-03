@@ -1,0 +1,27 @@
+[
+  {
+    "num": "01",
+    "title": "Multi-Site Cost Centre Chaos",
+    "summary": "Cost-centre and entity structures in multi-site clinic groups are almost always bolted on after the fact, not designed upfront. Groups running anywhere from a handful to dozens of clinics end up juggling multiple accounting entities and inconsistent cost-centre mapping, with chargebacks and consolidated group reporting stitched together manually rather than produced by the system. Every new clinic &mdash; opened or acquired &mdash; adds another layer of complexity to a process nobody goes back and redesigns."
+  },
+  {
+    "num": "02",
+    "title": "Card Issuance & Leaver Risk",
+    "summary": "Issuing a new card or shutting one down is consistently more painful than it should be &mdash; slow approval chains, manual bank processes, or simply no fast way to hand a budget to someone covering leave. The predictable result: cards stay active long after someone leaves the business, staff share cards and PINs as a workaround, and finance has no clear, current picture of who actually holds a live card at any given time. The gap widens every time the business opens a site, loses a staff member, or covers leave."
+  },
+  {
+    "num": "03",
+    "title": "Missing Receipts & Invalid Coding",
+    "summary": "Receipt and coding compliance breaks down at the site level regardless of policy. Staff are asked to handle finance admin between patients or appointments with no real-time prompt, so it either doesn't happen or happens generically, days or weeks later, once the memory of the purchase is gone. The result is chronic inconsistency between sites, an ever-growing chase list for finance, and receipts that turn up too late &mdash; or never &mdash; to properly substantiate the spend."
+  },
+  {
+    "num": "04",
+    "title": "Visibility & Toothless Approvals",
+    "summary": "Across the vertical, \"approval\" almost always means someone reviewing spend after the money has already left the business &mdash; a compliance record, not a real financial control. Multi-site groups rarely distinguish between pre-spend controls, which can actually stop bad spend, and post-spend sign-off, which can only document it afterwards. Combined with limited real-time visibility into what's happening at each site, problems are usually only found weeks later, once they're already baked into the numbers."
+  },
+  {
+    "num": "05",
+    "title": "Lean Team, Slipping Month-End",
+    "summary": "Multi-site clinic groups consistently run lean, centralised finance teams supporting a disproportionate number of sites. Every pain above compounds at month-end &mdash; missing receipts, wrong coding, weak approvals all landing at once. Reconciliation is largely manual, the least consistent sites eat a disproportionate share of the team's time, and the same small team is expected to absorb every new clinic the business adds, with no redesign of the process to match."
+  }
+]

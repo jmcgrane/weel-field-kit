@@ -1,0 +1,12 @@
+[
+  {
+    "id": "agedcare",
+    "label": "Aged Care / NDIS",
+    "painNames": ["Receipts", "Coding", "Cards", "Approvals", "Month-End"]
+  },
+  {
+    "id": "clinics",
+    "label": "Multi-Site Clinics",
+    "painNames": ["Sites", "Cards", "Receipts", "Approvals", "Lean Team"]
+  }
+]

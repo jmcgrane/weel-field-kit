@@ -1,0 +1,158 @@
+[
+  {
+    "id": "q1",
+    "type": "mc",
+    "pain": 0,
+    "q": "A dental group is doubling in size over 18 months through acquisition. What happens to the cards and entity at each newly acquired clinic?",
+    "options": [
+      "They're migrated to the group's brand and Xero entity within a week",
+      "They keep their old legacy entity and cards, creating an invisible second layer of spend",
+      "They're immediately closed and reissued under the holding company",
+      "Nothing changes because the group already uses one consolidated ledger"
+    ],
+    "correct": 1,
+    "explanation": "Acquired clinics keep their pre-acquisition entity and cards rather than switching to the group's brand — so head office inherits a layer of spend it can't see, on top of the layer it can."
+  },
+  {
+    "id": "q2",
+    "type": "mc",
+    "pain": 1,
+    "q": "At a rural and regional health group, why has the business effectively stopped issuing new corporate cards?",
+    "options": [
+      "Head office caps the number of active cards at 50",
+      "Issuing a new card requires the CEO to physically fly to a bank branch to co-sign it in person",
+      "The bank stopped offering new cards to the industry",
+      "Staff prefer to use personal cards and get reimbursed"
+    ],
+    "correct": 1,
+    "explanation": "The debit-card-per-state-account setup means every new card needs the CEO's in-person co-signature at a branch — so painful that new cards essentially stopped being issued, leaving leavers' cards still active."
+  },
+  {
+    "id": "q3",
+    "type": "mc",
+    "pain": 2,
+    "q": "Inside one dental group, what's the real difference between its cleanest clinic and its messiest (recently acquired) clinic?",
+    "options": [
+      "The messy clinic has fewer transactions but higher values",
+      "The clean clinic runs 15-20 well-documented transactions a month; the messy one runs 50-60 with barely any support and blurred personal/business spend",
+      "Both clinics run identical volumes but different currencies",
+      "The messy clinic simply doesn't use cards at all"
+    ],
+    "correct": 1,
+    "explanation": "Same company, wildly different site behaviour — 15-20 clean transactions versus 50-60 with capex mixed in with personal-looking purchases like a $70 honey jar."
+  },
+  {
+    "id": "q4",
+    "type": "mc",
+    "pain": 3,
+    "q": "What is the actual approval mechanism for card spend at a national radiology group?",
+    "options": [
+      "A finance business partner signs off every transaction within 24 hours",
+      "CC'ing an external approver into an email — finance's only real lever is rejecting submissions missing that CC or a receipt",
+      "An automated workflow that blocks spend above $200 without pre-approval",
+      "A monthly board review of all card transactions"
+    ],
+    "correct": 1,
+    "explanation": "One finance leader said the approval process 'doesn't really exist' — CC'ing someone on an email is the whole mechanism, and rejection for a missing CC or receipt is an administrative gate, not a financial control."
+  },
+  {
+    "id": "q5",
+    "type": "mc",
+    "pain": 3,
+    "q": "At a large corporate healthcare group, why doesn't the existing card approval process (inside the bank's portal) actually prevent bad spend?",
+    "options": [
+      "The portal doesn't support approvals at all",
+      "By the time anyone reviews it, the money has already been spent — it's a post-hoc formality",
+      "Approvals are outsourced to a third party who never responds",
+      "The bank charges extra to enable approvals"
+    ],
+    "correct": 1,
+    "explanation": "The finance exec admits 'it's already been spent anyway' by review time — which is why staff dodging a no-travel policy by booking flights on personal cards go undetected until after the fact."
+  },
+  {
+    "id": "q6",
+    "type": "mc",
+    "pain": 4,
+    "q": "Even using a 'free' bank card tool, how much finance time does a large corporate healthcare group lose each month chasing coding for just ONE business unit?",
+    "options": [
+      "About half a day",
+      "About 3 finance-days",
+      "About 10 finance-days",
+      "None — the free tool fully automates coding"
+    ],
+    "correct": 1,
+    "explanation": "Roughly 3 finance-days a month for one business unit out of many — and that time cost alone is the business case for paying for a better tool."
+  },
+  {
+    "id": "fq1",
+    "type": "fitb",
+    "pain": 0,
+    "q": "An 8-practice GP group runs three separate legal entities and has deliberately chosen not to ___________ them into one Xero file because of the complexity involved.",
+    "blank": "consolidate",
+    "hint": "Think about merging multiple sets of books into a single ledger.",
+    "explanation": "They deliberately avoided consolidating into one file — so any group-level view has to be manually stitched together across separate files and bank feeds."
+  },
+  {
+    "id": "fq2",
+    "type": "fitb",
+    "pain": 2,
+    "q": "At a national radiology group, staff are supposed to submit receipts within 48 hours, but in the finance controller's own words, 'at the moment it's a ___________... we're chasing them.'",
+    "blank": "disaster",
+    "hint": "A one-word description of a workflow that's completely broken.",
+    "explanation": "The finance controller called the receipt-chasing process a 'disaster' — the entire workflow rests on emailed photos and manual spreadsheet ticking."
+  },
+  {
+    "id": "fq3",
+    "type": "fitb",
+    "pain": 4,
+    "q": "A rural and regional health group's CFO described their AP approvals as 'blanket ___________ approvals' — invoices get rubber-stamped with no real scrutiny.",
+    "blank": "bullshit",
+    "hint": "The CFO's own blunt, informal word for approvals that aren't real approvals.",
+    "explanation": "'Blanket bullshit approvals' was the CFO's own description — invoices land in a shared inbox and get rubber-stamped 'approved, cheers' with the audit trail evaporating."
+  },
+  {
+    "id": "sq1",
+    "type": "scenario",
+    "pain": 1,
+    "context": "“We just hand the departing employee's card to whoever's covering for them — it's not a big deal.”",
+    "q": "What do you say?",
+    "options": [
+      "“That's fine, most businesses do that — let's move on.”",
+      "“How would you know today if three former employees still had an active card and a live subscription sitting on it?”",
+      "“You should really fire whoever set that process up.”",
+      "“Have you considered banning corporate cards altogether?”"
+    ],
+    "correct": 1,
+    "explanation": "Reframing to a concrete, unanswerable question about leaver risk surfaces the real exposure — untraceable subscriptions and shared credentials — without lecturing the prospect."
+  },
+  {
+    "id": "sq2",
+    "type": "scenario",
+    "pain": 2,
+    "context": "“Our staff know they need to keep receipts, so it mostly gets handled.”",
+    "q": "What do you say?",
+    "options": [
+      "“Great, then you won't need anything from us.”",
+      "“Realistically, what percentage of last month's transactions had a receipt attached and the right code on them by month-end?”",
+      "“You should fine staff who don't submit receipts on time.”",
+      "“Most businesses just accept that as a cost of doing business.”"
+    ],
+    "correct": 1,
+    "explanation": "Asking for the real number — not the intention — usually exposes the gap between policy and practice, which is the actual pain worth solving."
+  },
+  {
+    "id": "sq3",
+    "type": "scenario",
+    "pain": 3,
+    "context": "“We do have an approval process — everything gets reviewed in the bank's portal.”",
+    "q": "What do you say?",
+    "options": [
+      "“Perfect, that sounds like it's already solved.”",
+      "“Is that review happening before the money leaves the business, or after it's already been spent?”",
+      "“That portal is outdated, you should switch banks.”",
+      "“Approvals don't really matter for card spend anyway.”"
+    ],
+    "correct": 1,
+    "explanation": "This question draws the exact distinction most prospects haven't drawn themselves — between a real control (before spend) and compliance theatre (after spend)."
+  }
+]

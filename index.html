@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weel &mdash; Field Kit</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<div class="icp-badge" id="icp-badge" onclick="toggleICP()">Field Kit &#8646;</div>
+
+<div id="home" class="screen active">
+  <div class="home-inner">
+    <header class="topbar">
+      <div class="brandmark">WEEL <span>&middot;</span> BDR FIELD KIT</div>
+      <div class="streak-badge">&#128293; <strong id="streak-num">0</strong>&nbsp;day streak</div>
+    </header>
+
+    <div class="hero">
+      <h1>Field Kit.</h1>
+      <p class="subtitle">Know the product. Know the pains. Close the call. Built to make it stick.</p>
+    </div>
+
+    <div class="icp-switch" id="icp-switch"></div>
+
+    <div class="start-card" onclick="goWalkthrough()">
+      <div class="start-tag">Start here</div>
+      <div class="start-name">How to use this</div>
+      <div class="start-desc">A 2-minute walkthrough &mdash; the order to learn things, the science behind why, and your daily 10-minute warm-up.</div>
+      <div class="start-arrow">&rarr;</div>
+    </div>
+
+    <div class="sec-label">Foundation &mdash; the product</div>
+    <div class="mode-grid">
+      <div class="mode-card" onclick="goProduct()"><div class="mode-icon">&#129520;</div><div class="mode-name">What We Do</div><div class="mode-desc">Your pitch up top. Six tiles for what the product offers.</div></div>
+      <div class="mode-card" onclick="goIntegrations()"><div class="mode-icon">&#128279;</div><div class="mode-name">Integrations</div><div class="mode-desc">Xero, MYOB, QBO, NetSuite. What syncs, how to talk about it.</div></div>
+    </div>
+
+    <div id="vertical-playbook"></div>
+
+    <div class="sec-label">Practice &mdash; the 5 pains</div>
+    <div class="mode-grid">
+      <div class="mode-card" onclick="goStudy()"><div class="mode-icon">&#128214;</div><div class="mode-name">Top Pain Points</div><div class="mode-desc">The biggest pains for this vertical, distilled from real conversations.</div></div>
+      <div class="mode-card" onclick="goFlashcards()"><div class="mode-icon">&#9889;</div><div class="mode-name">Flashcards</div><div class="mode-desc">Active recall with 3-level confidence. Weak cards surface more often.</div></div>
+      <div class="mode-card" onclick="goQuiz()"><div class="mode-icon">&#127919;</div><div class="mode-name">Quiz Me</div><div class="mode-desc">Multiple choice, fill in the blank, scenarios. Instant feedback.</div></div>
+      <div class="mode-card" onclick="goScenario()"><div class="mode-icon">&#128222;</div><div class="mode-name">On The Phone</div><div class="mode-desc">Prospect says something. Write your response before the reveal.</div></div>
+    </div>
+
+    <div class="mastery-section">
+      <div class="mastery-top"><span class="mastery-label">Mastery score</span><span class="mastery-pct" id="home-pct">0%</span></div>
+      <div class="progress-bar"><div class="progress-fill" id="home-fill" style="width:0%"></div></div>
+      <div class="readiness-mini" id="readiness-mini"></div>
+    </div>
+  </div>
+</div>
+
+<div id="walkthrough" class="screen">
+  <div style="max-width:740px;width:100%">
+    <div class="screen-header"><span class="back-btn" onclick="goHome()">&larr; Back</span><span class="screen-title">How to use this</span><span></span></div>
+    <div class="pi-wrap">
+
+      <h2 class="pi-hero">4 weeks to <span>fluent</span>. The order matters.</h2>
+      <p class="pi-sub">This kit is built on three things that actually work for memory: active recall, spaced repetition, and elaborative interrogation. Read this once, then follow the cadence below.</p>
+
+      <div class="sec-label">The order</div>
+      <div style="margin-bottom:32px">
+        <div class="wt-step"><div class="wt-step-num current">01</div><div class="wt-step-body"><div class="wt-step-row"><div class="wt-step-name">Walkthrough</div><div class="wt-step-time">2 min &middot; you're here</div></div><div class="wt-step-desc">Get oriented. Understand the order, the science, and the daily routine.</div></div></div>
+        <div class="wt-step"><div class="wt-step-num">02</div><div class="wt-step-body"><div class="wt-step-row"><div class="wt-step-name">What We Do</div><div class="wt-step-time">15 min</div></div><div class="wt-step-desc">Get fluent on the product. Read the pitch, click into each of the six tiles. You can't sell pains without product fluency first.</div><span class="wt-step-cta" onclick="goProduct()">Open What We Do &rarr;</span></div></div>
+        <div class="wt-step"><div class="wt-step-num">03</div><div class="wt-step-body"><div class="wt-step-row"><div class="wt-step-name">Integrations</div><div class="wt-step-time">5 min</div></div><div class="wt-step-desc">Know the four accounting systems and what to say about each. This question comes up on every call.</div><span class="wt-step-cta" onclick="goIntegrations()">Open Integrations &rarr;</span></div></div>
+        <div class="wt-step"><div class="wt-step-num">04</div><div class="wt-step-body"><div class="wt-step-row"><div class="wt-step-name">Top Pain Points</div><div class="wt-step-time">30 min</div></div><div class="wt-step-desc">The 5 pains that come up again and again. Read all five end-to-end first.</div><span class="wt-step-cta" onclick="goStudy()">Open Top Pain Points &rarr;</span></div></div>
+        <div class="wt-step"><div class="wt-step-num">05</div><div class="wt-step-body"><div class="wt-step-row"><div class="wt-step-name">Flashcards</div><div class="wt-step-time">10 min daily</div></div><div class="wt-step-desc">Active recall &mdash; this is where it actually sticks. Cards you mark as shaky surface 3x more often. Cards you nail surface less.</div><span class="wt-step-cta" onclick="goFlashcards()">Open Flashcards &rarr;</span></div></div>
+        <div class="wt-step"><div class="wt-step-num">06</div><div class="wt-step-body"><div class="wt-step-row"><div class="wt-step-name">Quiz Me</div><div class="wt-step-time">15 min weekly</div></div><div class="wt-step-desc">Multiple choice, fill-in-the-blank, scenarios. Use this to find blind spots, not for daily reps.</div><span class="wt-step-cta" onclick="goQuiz()">Open Quiz Me &rarr;</span></div></div>
+        <div class="wt-step"><div class="wt-step-num">07</div><div class="wt-step-body"><div class="wt-step-row"><div class="wt-step-name">On The Phone</div><div class="wt-step-time">5 min daily</div></div><div class="wt-step-desc">Real reps. A prospect says something tricky &mdash; you write your response before seeing the reveal. Production beats recognition.</div><span class="wt-step-cta" onclick="goScenario()">Open On The Phone &rarr;</span></div></div>
+      </div>
+
+      <div class="sec-label">Why this order works</div>
+      <div class="wt-grid">
+        <div class="wt-card"><div class="wt-card-title">Foundation first</div><div class="wt-card-text">Pain narratives only land if you know the product. <strong>Skipping straight to pains</strong> means you'll fumble follow-up questions about how Weel actually solves it.</div></div>
+        <div class="wt-card"><div class="wt-card-title">Active recall &gt; re-reading</div><div class="wt-card-text">Re-reading <em>feels</em> productive but doesn't stick. <strong>Pulling answers out</strong> &mdash; flashcards, quizzes, scenarios &mdash; is what builds real memory.</div></div>
+        <div class="wt-card"><div class="wt-card-title">Spaced repetition</div><div class="wt-card-text">The flashcard deck weights itself. Cards you mark <strong>shaky surface 3&times;</strong> more often than ones you nail. Don't fight it.</div></div>
+        <div class="wt-card"><div class="wt-card-title">Production &gt; recognition</div><div class="wt-card-text">Recognising the right answer in a quiz is easy. <strong>Writing your own response</strong> in On The Phone is closer to a real call &mdash; that's the bar.</div></div>
+      </div>
+
+      <div class="sec-label">Recommended cadence</div>
+      <div style="margin-bottom:32px">
+        <div class="wt-week"><div class="wt-week-tag">Week 1</div><div class="wt-week-name">Foundation</div><div class="wt-week-text">Read <strong>What We Do</strong> end-to-end. Read <strong>Integrations</strong>. Skim Top Pain Points once to get the shape of the 5 pains. <em>Goal:</em> vocabulary &mdash; you should be able to say what Weel does in one breath.</div></div>
+        <div class="wt-week"><div class="wt-week-tag">Week 2</div><div class="wt-week-name">Pains</div><div class="wt-week-text">One pain per day in <strong>Top Pain Points</strong>. Daily flashcards (~10 min). <em>Goal:</em> own the language &mdash; you can tell the story of each pain unprompted.</div></div>
+        <div class="wt-week"><div class="wt-week-tag">Week 3</div><div class="wt-week-name">Reps</div><div class="wt-week-text">Daily flashcards. One <strong>On The Phone</strong> scenario per day. Take a Quiz mid-week. <em>Goal:</em> speak the pains fluently when challenged.</div></div>
+        <div class="wt-week"><div class="wt-week-tag">Week 4</div><div class="wt-week-name">Live</div><div class="wt-week-text">Shadow Jake. Make first calls. Run the daily warm-up routine before each call. <em>Goal:</em> first booked meeting on your own.</div></div>
+      </div>
+
+      <div class="wt-routine">
+        <div class="wt-routine-title">Daily 10-minute warm-up</div>
+        <div class="wt-routine-sub">Run this before any call block.</div>
+        <ul class="wt-routine-list">
+          <li><span class="wt-routine-time">5 MIN</span><span>Flashcards &mdash; whatever surfaces</span></li>
+          <li><span class="wt-routine-time">3 MIN</span><span>One scenario in On The Phone</span></li>
+          <li><span class="wt-routine-time">2 MIN</span><span>Re-read your pitch on What We Do</span></li>
+        </ul>
+      </div>
+
+      <div class="sec-label" style="margin-top:32px">When to come back</div>
+      <div class="wt-grid">
+        <div class="wt-card"><div class="wt-card-title">Before any call</div><div class="wt-card-text">Run the 10-minute warm-up above.</div></div>
+        <div class="wt-card"><div class="wt-card-title">After a tough call</div><div class="wt-card-text">Pull the relevant pain in Top Pain Points and refresh your memory.</div></div>
+        <div class="wt-card"><div class="wt-card-title">Weekly</div><div class="wt-card-text">Run a Quiz to stress-test what's actually sticking.</div></div>
+        <div class="wt-card"><div class="wt-card-title">When you plateau</div><div class="wt-card-text">Re-read this walkthrough. Cadence matters more than effort.</div></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="study" class="screen">
+  <div style="max-width:740px;width:100%">
+    <div class="screen-header"><span class="back-btn" onclick="goHome()">&#8592; Back</span><span class="screen-title">Top Pain Points</span><div class="pain-nav" id="pain-nav"></div></div>
+    <div id="pain-card" class="pain-card"></div>
+  </div>
+</div>
+
+<div id="whyweel" class="screen">
+  <div style="max-width:740px;width:100%">
+    <div class="screen-header"><span class="back-btn" onclick="goHome()">&#8592; Back</span><span class="screen-title">Why Weel Wins</span><span></span></div>
+    <div class="pi-wrap" id="whyweel-body"></div>
+  </div>
+</div>
+
+<div id="customers" class="screen">
+  <div style="max-width:740px;width:100%">
+    <div class="screen-header"><span class="back-btn" onclick="goHome()">&#8592; Back</span><span class="screen-title">Existing Customers</span><span></span></div>
+    <div class="pi-wrap" id="customers-body"></div>
+  </div>
+</div>
+
+<div id="usecases" class="screen">
+  <div style="max-width:740px;width:100%">
+    <div class="screen-header"><span class="back-btn" onclick="goHome()">&#8592; Back</span><span class="screen-title">Core Use Cases</span><span></span></div>
+    <div class="pi-wrap" id="usecases-body"></div>
+  </div>
+</div>
+
+<div id="competitors" class="screen">
+  <div style="max-width:740px;width:100%">
+    <div class="screen-header"><span class="back-btn" onclick="goHome()">&#8592; Back</span><span class="screen-title">Competitor Landscape</span><span></span></div>
+    <div class="pi-wrap" id="competitors-body"></div>
+  </div>
+</div>
+
+<div id="flashcards" class="screen">
+  <div style="max-width:560px;width:100%">
+    <div class="screen-header" style="max-width:560px"><span class="back-btn" onclick="goHome()">&#8592; Back</span><span class="screen-title">Flashcards</span><span></span></div>
+    <div class="fc-wrap">
+      <div class="fc-progress-row"><div class="fc-bar-wrap"><div class="fc-bar" id="fc-bar" style="width:0%"></div></div><div class="fc-counter" id="fc-counter">0 / 15</div></div>
+      <p class="card-hint">tap card to reveal &middot; rate your confidence below</p>
+      <div class="card-scene" onclick="flipCard()">
+        <div class="card-3d" id="card-3d">
+          <div class="card-face card-front"><div class="c-label">Question</div><div class="c-pain" id="fc-pain-tag"></div><div class="c-question" id="fc-q"></div></div>
+          <div class="card-face card-back"><div class="c-label" style="color:var(--green)">Answer</div><div class="c-answer" id="fc-a"></div></div>
+        </div>
+      </div>
+      <div class="conf-row" id="conf-row">
+        <div class="conf-btn shaky" onclick="rateCard(1)"><div class="cb-icon">&#128556;</div><span class="cb-label shaky">Shaky</span><div class="cb-sub">Wasn't sure</div></div>
+        <div class="conf-btn got-it" onclick="rateCard(2)"><div class="cb-icon">&#128077;</div><span class="cb-label got-it">Got it</span><div class="cb-sub">Needed a beat</div></div>
+        <div class="conf-btn cold" onclick="rateCard(3)"><div class="cb-icon">&#129482;</div><span class="cb-label cold">Knew it cold</span><div class="cb-sub">Instant recall</div></div>
+      </div>
+      <div class="fc-done" id="fc-done">
+        <div class="fc-done-icon">&#9989;</div>
+        <div class="fc-done-title">Deck complete</div>
+        <div class="fc-done-sub">Session summary:</div>
+        <div class="fc-done-scores" id="fc-done-scores"></div>
+        <button class="btn primary" onclick="goFlashcards()">Go again</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="quiz" class="screen">
+  <div style="max-width:660px;width:100%">
+    <div class="screen-header" style="max-width:660px"><span class="back-btn" onclick="goHome()">&#8592; Back</span><span class="screen-title">Quiz</span><span></span></div>
+    <div class="quiz-wrap">
+      <div class="q-type-row">
+        <div class="qt-pill active" id="qt-all" onclick="setQType('all')">All types</div>
+        <div class="qt-pill" id="qt-mc" onclick="setQType('mc')">Multiple choice</div>
+        <div class="qt-pill" id="qt-fitb" onclick="setQType('fitb')">Fill in blank</div>
+        <div class="qt-pill" id="qt-scenario" onclick="setQType('scenario')">Scenario</div>
+      </div>
+      <div class="quiz-progress-row"><div class="qp-bar-wrap"><div class="qp-bar" id="qp-bar" style="width:0%"></div></div><div class="qp-label" id="qp-label">1 / 8</div></div>
+      <div id="quiz-card-wrap"></div>
+      <div class="quiz-done" id="quiz-done">
+        <div class="score-big" id="result-score"></div>
+        <div class="score-label" id="result-label"></div>
+        <div class="result-breakdown" id="result-breakdown"></div>
+        <button class="btn primary" onclick="goQuiz()" style="margin-bottom:10px;width:100%">Try again</button>
+        <button class="btn" onclick="goHome()" style="width:100%">&#8592; Back to home</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="scenario" class="screen">
+  <div style="max-width:680px;width:100%">
+    <div class="screen-header" style="max-width:680px"><span class="back-btn" onclick="goHome()">&#8592; Back</span><span class="screen-title">On The Phone</span><span id="sc-counter" style="font-size:11px;color:var(--muted2)"></span></div>
+    <div class="sc-wrap"><div id="scenario-body"></div></div>
+  </div>
+</div>
+
+<div id="product" class="screen">
+  <div style="max-width:740px;width:100%">
+    <div class="screen-header"><span class="back-btn" onclick="goHome()">&#8592; Back</span><span class="screen-title">What We Do</span><span></span></div>
+    <div class="pi-wrap">
+
+      <div class="sec-label">The pitch</div>
+      <div class="pitch-box" id="pitch-box">
+        <div class="pitch-text">[ Your pitch goes here &mdash; drop it in and Alen will swap this out. Tap edit to paste it now. ]</div>
+        <button class="pitch-edit-btn" onclick="editPitch()">Edit pitch &rarr;</button>
+      </div>
+
+      <div class="sec-label" style="margin-top:32px">What the product offers</div>
+      <p class="pi-sub" style="margin-bottom:18px">Six things, high level. Tap any tile for the detail.</p>
+
+      <div class="prod-tile" onclick="toggleTile('t1')">
+        <div class="pt-top"><div class="pt-icon">&#128179;</div><div class="pt-name">Smart Cards</div><div class="pt-arrow" id="t1-arrow">+</div></div>
+        <div class="pt-line">Unlimited virtual &amp; physical Visa cards, issued instantly. One per person, project, or team.</div>
+        <div class="pt-detail" id="t1-detail">
+          <div class="pt-d-row"><strong>Virtual cards</strong> &mdash; created in seconds, not weeks. Apple Pay supported.</div>
+          <div class="pt-d-row"><strong>Physical cards</strong> &mdash; for staff that need to tap.</div>
+          <div class="pt-d-row"><strong>Pre-spend controls</strong> &mdash; spending policy lives on the card itself. Limits, merchant restrictions, time-of-day, locked categories. Anything outside policy is <em>declined at the point of purchase.</em></div>
+          <div class="pt-d-row"><strong>Individual attribution</strong> &mdash; every transaction tied to a person. No more shared cards, no more mystery $340.</div>
+        </div>
+      </div>
+
+      <div class="prod-tile" onclick="toggleTile('t2')">
+        <div class="pt-top"><div class="pt-icon">&#129534;</div><div class="pt-name">Smart Receipts</div><div class="pt-arrow" id="t2-arrow">+</div></div>
+        <div class="pt-line">Receipts capture themselves at the moment of spend. Coded automatically. No more chasing.</div>
+        <div class="pt-detail" id="t2-detail">
+          <div class="pt-d-row"><strong>In-app capture</strong> &mdash; staff snap a photo, app prompts them after every transaction.</div>
+          <div class="pt-d-row"><strong>OCR + GST extraction</strong> &mdash; merchant, amount, GST pulled automatically.</div>
+          <div class="pt-d-row"><strong>Auto-reminders</strong> &mdash; if a receipt is missing, Weel chases the staff member, not finance.</div>
+          <div class="pt-d-row"><strong>Auto-coding to GL</strong> &mdash; chart of accounts and tracking categories sync from Xero/MYOB/QBO/NetSuite. Rules engine + AI assigns the right code at the moment of spend, so staff don't pick from 200 cost centres.</div>
+        </div>
+      </div>
+
+      <div class="prod-tile" onclick="toggleTile('t3')">
+        <div class="pt-top"><div class="pt-icon">&#9989;</div><div class="pt-name">Approvals &amp; Policies</div><div class="pt-arrow" id="t3-arrow">+</div></div>
+        <div class="pt-line">Multi-level approval workflows. Real-time. Configurable by team, cost centre, dollar value or category.</div>
+        <div class="pt-detail" id="t3-detail">
+          <div class="pt-d-row"><strong>Multi-level workflows</strong> &mdash; route by team, dollar threshold, cost centre, project.</div>
+          <div class="pt-d-row"><strong>Real-time notifications</strong> &mdash; approvers get pinged the second a transaction hits.</div>
+          <div class="pt-d-row"><strong>Full audit trail</strong> &mdash; every approval, decline, comment captured against the transaction.</div>
+          <div class="pt-d-row"><strong>Backups built in</strong> &mdash; no single point of failure when the GM is on leave.</div>
+        </div>
+      </div>
+
+      <div class="prod-tile" onclick="toggleTile('t4')">
+        <div class="pt-top"><div class="pt-icon">&#128195;</div><div class="pt-name">Accounts Payable</div><div class="pt-arrow" id="t4-arrow">+</div></div>
+        <div class="pt-line">Bills, batch payments, vendor management. One AP workflow.</div>
+        <div class="pt-detail" id="t4-detail">
+          <div class="pt-d-row"><strong>Bills in</strong> &mdash; via email, import from Xero, or manual entry.</div>
+          <div class="pt-d-row"><strong>AI OCR</strong> &mdash; pulls invoice data automatically.</div>
+          <div class="pt-d-row"><strong>Duplicate detection</strong> &mdash; flags duplicate invoices before they get paid twice.</div>
+          <div class="pt-d-row"><strong>Multi-level approvals</strong> &mdash; same approval engine as cards.</div>
+          <div class="pt-d-row"><strong>Batch payments</strong> &mdash; pay everything in one run.</div>
+        </div>
+      </div>
+
+      <div class="prod-tile" onclick="toggleTile('t5')">
+        <div class="pt-top"><div class="pt-icon">&#128181;</div><div class="pt-name">Reimbursements</div><div class="pt-arrow" id="t5-arrow">+</div></div>
+        <div class="pt-line">Out-of-pocket spend handled in the same platform as cards. Not a bolt-on.</div>
+        <div class="pt-detail" id="t5-detail">
+          <div class="pt-d-row"><strong>Submit in-app</strong> &mdash; staff snap a photo, fill in details, submit.</div>
+          <div class="pt-d-row"><strong>Approval &amp; payout</strong> &mdash; manager approves, paid out direct.</div>
+          <div class="pt-d-row"><strong>One platform</strong> &mdash; cards <em>and</em> reimbursements together. No more two tools, no more reconciling between systems.</div>
+        </div>
+      </div>
+
+      <div class="prod-tile" onclick="toggleTile('t6')">
+        <div class="pt-top"><div class="pt-icon">&#128260;</div><div class="pt-name">Subscriptions</div><div class="pt-arrow" id="t6-arrow">+</div></div>
+        <div class="pt-line">Track recurring spend. Surface duplicates and creep. Cancel from inside Weel.</div>
+        <div class="pt-detail" id="t6-detail">
+          <div class="pt-d-row"><strong>Auto-detection</strong> &mdash; recurring transactions flagged as subscriptions.</div>
+          <div class="pt-d-row"><strong>Price creep alerts</strong> &mdash; see when costs have crept up over time.</div>
+          <div class="pt-d-row"><strong>Cancel in-app</strong> &mdash; no chasing IT or the original signer.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="integrations" class="screen">
+  <div style="max-width:740px;width:100%">
+    <div class="screen-header"><span class="back-btn" onclick="goHome()">&#8592; Back</span><span class="screen-title">Integrations</span><span></span></div>
+    <div class="pi-wrap">
+      <h2 class="pi-hero">Weel syncs with the <span>four</span> accounting systems used by Australian mid-market.</h2>
+      <p class="pi-sub">Native, two-way, real-time. Setup is in clicks not weeks. Chart of accounts and tracking categories pull in automatically. Transactions push out the moment spend is approved &mdash; with receipts attached.</p>
+
+      <div class="sec-label">The four integrations</div>
+
+      <div class="intg-card">
+        <div class="intg-top"><div class="intg-name">Xero</div><div class="intg-status">Most common</div></div>
+        <div class="intg-when icp-text agedcare">~70% of NDIS &amp; family services orgs we walk into.</div>
+        <div class="intg-when icp-text clinics">~70% of multi-site clinic groups we walk into.</div>
+        <div class="intg-flow"><strong>In:</strong> Chart of accounts, tracking categories, GL codes &mdash; auto-imported.</div>
+        <div class="intg-flow"><strong>Out:</strong> Transactions push to Xero <em>the moment spend is approved</em>, with receipt attached, ready to reconcile.</div>
+        <div class="intg-flow icp-text agedcare"><strong>Hook:</strong> "If you're on Xero, this is plug-and-play. Most of our NDIS customers were live within a day."</div>
+        <div class="intg-flow icp-text clinics"><strong>Hook:</strong> "If you're on Xero, this is plug-and-play. Most of our multi-site clinic customers were live within a day."</div>
+      </div>
+
+      <div class="intg-card">
+        <div class="intg-top"><div class="intg-name">MYOB AccountRight</div><div class="intg-status">Common</div></div>
+        <div class="intg-when icp-text agedcare">Established orgs, longer-tenured aged care &amp; NDIS providers.</div>
+        <div class="intg-when icp-text clinics">Established clinic groups, longer-tenured multi-site operators.</div>
+        <div class="intg-flow"><strong>In:</strong> Chart of accounts, jobs, tax codes &mdash; auto-imported.</div>
+        <div class="intg-flow"><strong>Out:</strong> Same model &mdash; transactions sync with receipts after approval.</div>
+        <div class="intg-flow"><strong>Hook:</strong> "MYOB is fully supported. And if you're considering Xero down the track, we have a clean-cut migration path so you don't lose continuity."</div>
+      </div>
+
+      <div class="intg-card">
+        <div class="intg-top"><div class="intg-name">QuickBooks Online</div><div class="intg-status uncommon">Less common AU</div></div>
+        <div class="intg-when">Smaller orgs, NZ exposure, occasionally global parent companies.</div>
+        <div class="intg-flow"><strong>In/Out:</strong> Same two-way sync model.</div>
+        <div class="intg-flow"><strong>Hook:</strong> "Yes, fully native &mdash; same experience as our Xero customers."</div>
+      </div>
+
+      <div class="intg-card">
+        <div class="intg-top"><div class="intg-name">NetSuite</div><div class="intg-status tier">Enterprise tier</div></div>
+        <div class="intg-when">Larger / multi-entity orgs. Usually $50m+ revenue or multi-state operations.</div>
+        <div class="intg-flow"><strong>In:</strong> GL codes, dimensions, departments, entities.</div>
+        <div class="intg-flow"><strong>Out:</strong> Approved transactions flow into the right entity with clean GST coding. <strong>Multi-entity support</strong> built in.</div>
+        <div class="intg-flow icp-text agedcare"><strong>Hook:</strong> "Sits in our Enterprise tier alongside SSO and API access. Common with our larger NDIS customers running multiple entities."</div>
+        <div class="intg-flow icp-text clinics"><strong>Hook:</strong> "Sits in our Enterprise tier alongside SSO and API access. Common with larger multi-site clinic groups — we've seen groups running anywhere from 3 to 16+ separate entities across locations, especially ones growing by acquisition."</div>
+      </div>
+
+      <div class="sec-label">What actually syncs</div>
+      <div class="feat-list">
+        <div class="feat-row"><div class="feat-tag">Two-Way</div><div class="feat-text">Chart of accounts, tracking categories, tax codes flow <strong>from</strong> the accounting system <strong>into</strong> Weel &mdash; so staff see clean dropdowns.</div></div>
+        <div class="feat-row"><div class="feat-tag">One-Way Out</div><div class="feat-text">Approved transactions, with receipts attached, push <strong>from Weel into</strong> the accounting system. Set export rules to control timing.</div></div>
+        <div class="feat-row"><div class="feat-tag">Status Tracking</div><div class="feat-text">Status column in Weel shows where every transaction sits between Weel and the accounting system. Nothing falls through.</div></div>
+        <div class="feat-row"><div class="feat-tag">Setup Time</div><div class="feat-text">Connect in a few clicks. Most orgs are syncing the <strong>same day</strong>. No IT project, no implementation phase.</div></div>
+      </div>
+
+      <div class="sec-label">Common questions on calls</div>
+
+      <div class="objbox">
+        <div class="obj-q">"Does Weel work with [our system]?"</div>
+        <div class="obj-text icp-text agedcare">"If you're on Xero, MYOB AccountRight, QuickBooks Online or NetSuite &mdash; yes, native two-way sync. Most NDIS providers we work with are on Xero or MYOB so it's standard. Which one are you on?"</div>
+        <div class="obj-text icp-text clinics">"If you're on Xero, MYOB AccountRight, QuickBooks Online or NetSuite &mdash; yes, native two-way sync. Most multi-site clinic groups we work with are on Xero or MYOB so it's standard. Which one are you on?"</div>
+      </div>
+
+      <div class="objbox">
+        <div class="obj-q">"How long does the integration take to set up?"</div>
+        <div class="obj-text">"Connect in a few clicks. Chart of accounts and tracking categories pull in automatically. Most orgs are live the same day &mdash; not the same week, not the same quarter."</div>
+      </div>
+
+      <div class="objbox">
+        <div class="obj-q">"Will my finance team have to re-key anything?"</div>
+        <div class="obj-text">"That's actually the whole point. Right now your team is manually pushing every transaction into Xero with the right code and a receipt &mdash; that's the 180 hours of month-end work we talked about. With Weel it pushes itself, coded, with the receipt already attached."</div>
+      </div>
+
+      <div class="objbox">
+        <div class="obj-q">"What if we have multiple Xero files?"</div>
+        <div class="obj-text icp-text agedcare">"Multi-entity is fully supported &mdash; really common with multi-location NDIS providers. Each entity connects to its own Xero file, but you manage everything in one Weel workspace."</div>
+        <div class="obj-text icp-text clinics">"Multi-entity is fully supported &mdash; really common with multi-site clinic groups. We've worked with groups managing anywhere from 3 to 16+ separate Xero files, especially ones that have grown through acquisition. Each entity or site connects to its own Xero file, but you manage everything in one Weel workspace."</div>
+      </div>
+
+
+      <div class="root-cause" style="margin-top:24px">
+        <div class="rc-label">The one-liner</div>
+        <div class="rc-text">"We integrate natively with what you already use &mdash; Xero, MYOB, QuickBooks or NetSuite. Two-way, real-time, receipts attached. Most teams are syncing the day they sign up."</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

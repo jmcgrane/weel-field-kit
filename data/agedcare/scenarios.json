@@ -1,0 +1,32 @@
+[
+  {
+    "prospect": "Finance manager at a 12-location disability provider: We tried to tighten up our expense process last year. Put in a new policy, sent it to all staff. It lasted about two months then everything went back to how it was.",
+    "ideal": "Acknowledge this is the norm, then reframe: the problem isn't the policy or the staff — it's that the system relies on field staff doing the right thing after long shifts. Behaviour fixes don't stick because the system design is broken. The solution is moving controls to the point of spend.",
+    "hook": "That's almost exactly what we hear from every org that's tried to fix this internally. The problem isn't the staff and it's not the policy — it's that you're relying on people who aren't finance people to make finance decisions correctly under pressure. That never sticks. What would it look like if the control happened at the moment of purchase, before anything could go wrong?"
+  },
+  {
+    "prospect": "CFO at a 200-person NDIS provider: Our finance team always seems to be running behind. I only get the monthly report around the 15th of the following month. I'm not sure what the hold-up is.",
+    "ideal": "Help them see what's actually happening. The 15th isn't finance being slow — it's 180 hours of invisible manual work. Finance is spending the whole month-end fixing problems that started in the field.",
+    "hook": "The 15th is actually a sign that the team is working incredibly hard — just on the wrong things. By the time they close the month, they've chased 50+ receipts, re-coded dozens of transactions, got late approvals signed off and manually pushed everything through. That's not a finance speed problem — that's a field process problem landing on finance's desk all at once. What would it mean for you if that report was ready on the 2nd?"
+  },
+  {
+    "prospect": "Finance manager: We've got about 40 support workers across 8 houses. They use a shared card at each house for house expenses. It works okay for the most part.",
+    "ideal": "Don't attack 'it works okay' — probe underneath it. Ask if they can attribute individual transactions to individual staff. When the answer is no, help them see the audit exposure risk sitting under what feels fine.",
+    "hook": "That's how most orgs are set up. Can I ask — if I pulled up any one of those house transactions right now, could you tell me which of the 40 staff made that purchase? [They say no.] That's the part that gets organisations in trouble. Not day-to-day, but the moment an auditor or funder asks for a transaction trail — there's no way to pin it to a person. Does that come up much for you?"
+  },
+  {
+    "prospect": "Operations manager: Our GM approves all the expenses. She's pretty on top of it usually.",
+    "ideal": "Probe the single point of failure. What happens when the GM is unavailable? How many transactions does she approve without real scrutiny? The system sounds fine until it breaks — and it breaks whenever that one person isn't available.",
+    "hook": "Great that she's across it. What happens when she's on leave or at a conference? Does the queue wait? And when she's reviewing 150 transactions at once, is she genuinely scrutinising each one — or does it become a rubber stamp at that volume? It looks controlled, but a single point of approval means one absence breaks the whole thing."
+  },
+  {
+    "prospect": "Finance manager: We have a solid approval process — every expense gets reviewed by a manager before we process it.",
+    "ideal": "Don't challenge it — probe whether they mean card spend or reimbursements. On card spend the money is already gone before any approval happens. On reimbursements approvals have real teeth. Then find out what the approver can actually verify.",
+    "hook": "That's good to hear. Can I ask — is that mostly card transactions or expense reimbursements? The reason I ask is they work pretty differently. On reimbursements you've got real control. On card spend the money's already left the account by the time it hits the approval queue. So what can your approver actually verify when they're looking at a card transaction?"
+  },
+  {
+    "prospect": "Finance manager: We do get a lot of coding errors from staff but we catch them before they go into the system.",
+    "ideal": "Acknowledge the control — but quantify the hidden cost. Finance is manually reviewing and correcting every single one. That's skilled time on data entry correction. How many per month? How long each? What else could that time be doing?",
+    "hook": "That's a solid control — but I'd love to understand the cost of it. How many transactions a month come through with wrong coding? And roughly how long does it take to identify the error and fix it? So if that's X hours a month just on corrections — what would your team be doing with that time if they didn't have to fix it?"
+  }
+]

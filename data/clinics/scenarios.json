@@ -1,0 +1,32 @@
+[
+  {
+    "prospect": "Finance controller at a 45-clinic radiology group: “We export everything from the bank portal into a spreadsheet and use formulas to work out which card belongs to which clinic — then a pivot table at month-end for the inter-clinic chargebacks.”",
+    "ideal": "Acknowledge how much manual effort that setup already represents, then shift the conversation from 'can you technically do this' to 'how much of your team's month is spent doing it manually' — quantify the hours before pitching automated cost-centre tagging.",
+    "hook": "“That's basically a full-time job hidden inside a spreadsheet. If every card transaction landed already tagged to the right clinic and cost centre the moment it happened, how many hours a month would that give your team back? Because right now you're rebuilding that pivot table from scratch every single month.”"
+  },
+  {
+    "prospect": "Ops lead at a rural and regional health group: “Issuing a new card means the CEO has to fly out and co-sign it at a branch, so honestly, we've just stopped issuing new ones.”",
+    "ideal": "Don't focus on the flight — focus on what's quietly accumulating because new cards stopped being issued: leavers still holding live cards, shared PINs, untraceable subscriptions. Make the risk concrete before mentioning the product.",
+    "hook": "“So if issuing a card is that painful, how many people who've actually left the business do you think still have an active card sitting in someone's drawer right now? That's the real cost — not the flight, it's what builds up quietly while nobody wants to go through that process again.”"
+  },
+  {
+    "prospect": "Finance controller at a national radiology group: “At the moment it's a disaster with receipts — we're chasing them constantly, and the whole approval is just someone CC'd on an email.”",
+    "ideal": "Validate that this is a workflow problem, not a people problem — practice staff aren't being careless, they just have no prompt in the moment. Pivot toward real-time capture at the point of spend rather than after-the-fact chasing.",
+    "hook": "“Your staff aren't the problem — they're between patients, not thinking about receipts. The fix isn't chasing harder, it's catching it the moment the card is tapped, before the memory of the purchase is gone. What would it be worth to you if that chasing disappeared entirely?”"
+  },
+  {
+    "prospect": "CFO at a rural and regional health group: “Our AP approvals are honestly blanket bullshit approvals — everything gets rubber-stamped in a shared inbox.”",
+    "ideal": "Meet the CFO's own blunt language rather than softening it — mirror back that approval today happens after the money's gone, then anchor on his own stated ambition (real-time visibility into spend like a $190 dinner) as the hook for the pitch.",
+    "hook": "“You said it better than I would have. The real question is: by the time anything gets 'approved', has the money already left the business? You mentioned wanting to be able to ask why someone spent $190 on dinner the day it happens, not two weeks later in a pile of claims — that's exactly the gap we close.”"
+  },
+  {
+    "prospect": "CFO at a large corporate healthcare group: “Even with the free bank tool we've got, my team still loses about three days a month just chasing coding for one business unit.”",
+    "ideal": "Do the maths out loud with the prospect — three days for one unit, multiplied across every other unit they run — to make the scale of the hidden cost obvious, then connect that lost time directly to the value of paying for a proper tool.",
+    "hook": "“Three days a month for one business unit — multiply that across every other unit you run, and that's not a coding problem anymore, that's a person's job disappearing into admin every month. What could your team actually do with those days back?”"
+  },
+  {
+    "prospect": "Financial controller at a dental group: “We're about to double in size over the next 18 months through acquisitions, and every clinic we buy comes with its own Xero entity, its own cards, its own mess.”",
+    "ideal": "Reframe growth-by-acquisition as a compounding operational risk rather than just a finance-system headache — point out that the current manual approach doesn't scale linearly, it scales worse than linearly, and ask what the plan is for clinic number 30.",
+    "hook": "“If it's already a lot of manual stitching-together at 15 entities, doubling that isn't going to be twice the work — it's going to be worse than twice, because every new acquisition brings its own legacy cards and entity nobody's cleaned up yet. What's the plan for clinic number 30?”"
+  }
+]

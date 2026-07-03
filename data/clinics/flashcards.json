@@ -1,0 +1,92 @@
+[
+  {
+    "id": "f1",
+    "pain": 0,
+    "q": "How many cost centres does a large corporate healthcare group manage, and what problem does that create for staff?",
+    "a": "Roughly 300 cost centres — staff face coding dropdowns too long to navigate accurately, and even the finance exec struggles to explain how site budgets roll up into one file."
+  },
+  {
+    "id": "f2",
+    "pain": 0,
+    "q": "Why does a dental group's acquisition strategy create an invisible layer of spend?",
+    "a": "Newly acquired clinics keep their old legacy entity and cards instead of switching to the group's brand, so a second layer of spend sits underneath what head office can actually see."
+  },
+  {
+    "id": "f3",
+    "pain": 0,
+    "q": "Why has an 8-practice GP group deliberately NOT consolidated its three legal entities into one Xero file?",
+    "a": "Because the complexity of merging felt worse than the complexity of staying separate — so any group-level view has to be stitched together by hand across separate files and bank feeds."
+  },
+  {
+    "id": "f4",
+    "pain": 1,
+    "q": "What does it take to issue a new card at one rural/regional health group, and what's the knock-on effect?",
+    "a": "The CEO has to physically fly to a bank branch to co-sign it — so painful that the business has largely stopped issuing new cards, leaving leavers' cards still active."
+  },
+  {
+    "id": "f5",
+    "pain": 1,
+    "q": "What's the 'official' workaround for covering a staff member's card during maternity leave at a large corporate healthcare group?",
+    "a": "Handing the physical card and PIN to a colleague for a few months — sharing credentials because there's no fast way to issue a short-term card."
+  },
+  {
+    "id": "f6",
+    "pain": 1,
+    "q": "At a 45-clinic radiology group, cards are meant to be one-per-clinic. What actually happens in practice?",
+    "a": "An area or ops manager covering multiple sites can end up holding 5-6 cards at once — one login controlling several sites' spend."
+  },
+  {
+    "id": "f7",
+    "pain": 2,
+    "q": "What is the entire 'approval' workflow for receipts at a national radiology group?",
+    "a": "Emailing a photo of the receipt with the manager CC'd as the approval, then finance manually ticking a 'substantiated' box in a spreadsheet."
+  },
+  {
+    "id": "f8",
+    "pain": 2,
+    "q": "What's the transaction volume and documentation gap between a clean and a messy clinic inside the same dental group?",
+    "a": "One clinic runs 15-20 clean transactions a month; another runs 50-60 with barely any support, mixing capex with personal-looking purchases."
+  },
+  {
+    "id": "f9",
+    "pain": 2,
+    "q": "What feature cluster made an incoming CFO at an 8-practice GP group say 'that's what I want'?",
+    "a": "Auto-coding, AI-suggested categories, automatic GST extraction, and a card-blocking feature that locks a card until a receipt is provided."
+  },
+  {
+    "id": "f10",
+    "pain": 3,
+    "q": "How did one finance leader at a radiology group describe their approval process?",
+    "a": "'It doesn't really exist' — the only mechanism is CC'ing an external approver into an email."
+  },
+  {
+    "id": "f11",
+    "pain": 3,
+    "q": "What phrase did a rural/regional health group's CFO use to describe their AP approvals, and why?",
+    "a": "'Blanket bullshit approvals' — invoices get rubber-stamped in a shared inbox with no real scrutiny and no real audit trail."
+  },
+  {
+    "id": "f12",
+    "pain": 3,
+    "q": "What approval gap exists at a dental group between supplier invoices and clinic card spend?",
+    "a": "Dual approval exists for supplier invoices (practice level, then the controller above a threshold) — but there's no equivalent approval step at all for card or petty-cash spend."
+  },
+  {
+    "id": "f13",
+    "pain": 4,
+    "q": "How long did month-end used to take at a rural/regional health group?",
+    "a": "Around the 20th of the following month — by the CFO's own admission, the numbers were barely relevant by the time they landed."
+  },
+  {
+    "id": "f14",
+    "pain": 4,
+    "q": "How much finance time does a large corporate healthcare group lose each month just on coding for one business unit, even using a free bank tool?",
+    "a": "Roughly 3 finance-days a month — for one business unit out of many."
+  },
+  {
+    "id": "f15",
+    "pain": 4,
+    "q": "How does a 5-person finance team keep up with 45 clinics at a national radiology group?",
+    "a": "They don't scale it — they reconcile everything through manual spreadsheet exports and pivot tables, so every new clinic is pure linear overhead on the same five people."
+  }
+]

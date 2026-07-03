@@ -1,0 +1,42 @@
+[
+  {
+    "num": "01",
+    "title": "Missing Receipts",
+    "theySay": "Staff just don't submit them.",
+    "story": "A support worker finishes a shift at <strong>10pm</strong>. They bought groceries at 6pm, shoved the receipt in their pocket, drove home, put their uniform in the wash. <span class='hi'>Receipt is gone.</span> They don't think about it again.<br><br>Finance sends a reminder to an email they check twice a week. They see it, mean to deal with it, forget.<br><br>Now finance has a transaction with no receipt. They can't code it. They can't close the month. So they chase. And chase. And chase.<br><br>Multiply by <strong>50 staff</strong>. That is their <span class='danger'>entire job at month-end</span>. Not analysis, not strategy — chasing humans for pieces of paper.<br><br>And even when the receipt arrives three weeks late — they still have to <strong>manually match, check coding, fix it, push it through. Every. Single. One.</strong>",
+    "phoneQ": "&ldquo;When a receipt doesn&rsquo;t come in, whose job is it to chase it? And what happens if they never get it?&rdquo;",
+    "rootCause": "People spending money are not finance people. The system relies on them doing the right thing after a long shift. They won't."
+  },
+  {
+    "num": "02",
+    "title": "Wrong GL Coding",
+    "theySay": "Staff code things incorrectly.",
+    "story": "A support worker at the end of a <strong>10 hour shift</strong>. They open the expense app. There's a dropdown with <span class='hi'>200 cost centres</span>. They have no idea what half mean. They pick the closest one. Or the one they always pick. Or leave it blank.<br><br>Finance gets that expense. The coding is wrong. They have to work out what it should have been — which location, which funding source, which program. Fix it manually. Push it through.<br><br>If they don't catch it — and sometimes they don't — it flows through to the accounting system wrong. Reporting is wrong. Funding allocation is wrong. A participant's budget gets charged incorrectly. In an NDIS org, that's <span class='danger'>not just an admin problem — that's a compliance problem.</span><br><br>This isn't because workers are careless. It's because <strong>you're asking a carer to make an accounting decision at the end of a long shift. That will never work.</strong>",
+    "phoneQ": "&ldquo;When a staff member submits an expense, what information do they need to provide? And how often does it come through accurately the first time?&rdquo;",
+    "rootCause": "You cannot rely on non-finance people to make accurate accounting decisions under fatigue. The system design is broken."
+  },
+  {
+    "num": "03",
+    "title": "Shared Cards",
+    "theySay": "We've got a card for each house.",
+    "story": "One card. <strong>Four staff members</strong> using it across the week. A transaction comes through on Thursday for <span class='hi'>$340 at a hardware store</span>. Finance looks at it — what was this for? Which staff member? Was it authorised?<br><br>There is <strong>no way to know.</strong> The card doesn't say who used it. The bank statement doesn't either. Unless someone wrote it in a logbook — which they didn't — that transaction is a mystery.<br><br>Now imagine an auditor questions that $340. Finance has to prove it was legitimate, what it was for, who authorised it, which participant it relates to. <span class='danger'>They can't.</span><br><br>This is not just an admin problem. It is an <strong>audit exposure problem. A fraud risk problem.</strong> Anyone with access to that card can spend anything and finance has no way to pin it to a person.",
+    "phoneQ": "&ldquo;When you look at a transaction on your card statement, can you tell me which staff member made that purchase?&rdquo;",
+    "rootCause": "Shared cards destroy accountability and audit trails. There is no way to attribute spend to an individual when multiple people share one card."
+  },
+  {
+    "num": "04",
+    "title": "Broken Approvals",
+    "theySay": "Our approval process could be better.",
+    "story": "First, the thing most people miss: <strong>all of this is post-spend.</strong> By the time an approval happens, the money has already left the account. The purchase is done. Finance is doing forensic work on something that already happened.<br><br>That means approvals work completely differently depending on how the spend happened. Two scenarios:<br><br><span class='hi'>Scenario A — Corporate card.</span> Staff member taps the card, money is gone instantly. An approval afterwards <span class='danger'>cannot reverse that spend.</span> Declining it in the system doesn't get the money back. What it does is create a formal record that the spend wasn't authorised — the paper trail for disciplinary action. It's a compliance and audit tool, not a financial control. The real control on cards is pre-spend: spend limits, merchant restrictions, individual cards so spend is attributed to a person.<br><br><span class='hi'>Scenario B — Expense reimbursement.</span> Staff member paid out of their own pocket and is claiming it back. Here approvals have <strong>actual teeth</strong> — decline it and the company's money never moves. That's a real control.<br><br>Most orgs don't distinguish between these two. They run one approval process for everything, managed by <strong>one person</strong> who goes on leave, rubber-stamps at volume, or has no real context for whether the spend was legitimate.<br><br>The question that exposes it: <em>\"When your approver clicks approve — what are they actually able to verify in that moment?\"</em>",
+    "phoneQ": "&ldquo;Walk me through what happens after a staff member makes a purchase &mdash; is that usually a card spend or a reimbursement? And who approves it before it hits your books?&rdquo;",
+    "rootCause": "All approvals are post-spend &mdash; the money is already gone. On cards they are an audit trail, not a financial control. On reimbursements they have real teeth. Most orgs don't know the difference, and their one-size-fits-all process is theatrical either way."
+  },
+  {
+    "num": "05",
+    "title": "Month-End Chaos",
+    "theySay": "Month-end is pretty full on.",
+    "story": "Every single pain — missing receipts, wrong coding, missing approvals, unidentified transactions — <span class='danger'>all lands at once</span> in the last week of the month.<br><br>Finance is simultaneously chasing receipts from three weeks ago, correcting codes, getting approvals signed off, matching transactions to statements, fixing everything unresolved, and pushing clean data into the accounting system.<br><br>Some receipts will never come. Some staff have left. Some transactions get closed with <span class='hi'>\"receipt unavailable\"</span> — a compliance risk waiting for an auditor to find.<br><br>By the time it's done — genuinely done — it's the <strong>14th or 15th of the following month.</strong> Halfway through November before they know what happened in October.<br><br>The CFO sees the report arrive late and thinks <span class='danger'>finance is slow.</span> They don't see the 180 hours of manual work. Finance wears the blame for a problem that starts the moment a support worker forgets to take a receipt out of their pocket.",
+    "phoneQ": "&ldquo;What does the last week of the month look like for your finance team? And what date do you typically have a clean view of last month&rsquo;s spend?&rdquo;",
+    "rootCause": "Month-end is a tax on every broken process above it. The later the clean report, the more invisible the finance team's effort &mdash; and the deeper the chaos."
+  }
+]

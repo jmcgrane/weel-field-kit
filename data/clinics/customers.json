@@ -1,0 +1,13 @@
+[
+  { "industry": "GP", "businesses": "GP Collective &middot; Cornerstone Health" },
+  { "industry": "Radiology", "businesses": "Quantum Radiology &middot; Vision Radiology" },
+  { "industry": "Dentist", "businesses": "Nova Dental Implant" },
+  { "industry": "Vet", "businesses": "Greencross" },
+  { "industry": "Mental Health", "businesses": "Richmind &middot; Malu Health" },
+  { "industry": "Emergency Healthcare", "businesses": "Private Emergency Health Australia (PEHA)" },
+  { "industry": "Rural Health Outreach", "businesses": "Fly2Health" },
+  { "industry": "Heart / Specialist", "businesses": "Advara Heartcare" },
+  { "industry": "Aboriginal Health", "businesses": "Wuchopperen" },
+  { "industry": "IVF", "businesses": "Virtus Health" },
+  { "industry": "Beauty / Spa", "businesses": "Soak Bathhouse" }
+]

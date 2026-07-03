@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Multi-entity card &amp; expense",
+    "text": "Cards and expenses managed separately across many clinic or practice Xero/NetSuite files, with consolidated group-level reporting on top."
+  },
+  {
+    "title": "Card issuance &amp; leaver management",
+    "text": "Fast reissue for new starters, instant limit-to-zero for leavers, and rules handed to a covering colleague — no shared PINs."
+  },
+  {
+    "title": "Receipt capture &amp; card-blocking",
+    "text": "Cards lock without a timely receipt and unlock the moment one's submitted, making compliance self-enforcing across every site."
+  },
+  {
+    "title": "Accounts payable automation",
+    "text": "OCR invoice capture, auto-coding rules, scheduled payment runs and purchase-order pre-approvals — built for high invoice volume across many small sites."
+  },
+  {
+    "title": "Subscription management",
+    "text": "Visibility over recurring charges so subscriptions don't get orphaned on a shared card or an ex-staff member's card."
+  },
+  {
+    "title": "Reimbursements",
+    "text": "Out-of-pocket and petty-cash-style spend covered for sites that don't have a card, without leaving the same approval and coding rules."
+  },
+  {
+    "title": "Dollar-threshold approval routing",
+    "text": "Multi-level sign-off by dollar value across many small site-level budgets, so approvals scale with risk rather than headcount."
+  }
+]

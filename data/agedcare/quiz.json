@@ -1,0 +1,158 @@
+[
+  {
+    "id": "q1",
+    "type": "mc",
+    "pain": 0,
+    "q": "A support worker pockets a receipt after a 10pm shift. What most likely happens?",
+    "options": [
+      "They submit it via app that night",
+      "It goes in the wash and is never seen again",
+      "They email it to finance the next morning",
+      "They log it in the house notebook"
+    ],
+    "correct": 1,
+    "explanation": "Uniform goes in the wash, receipt disappears. Finance will chase for weeks. This is the rule, not the exception."
+  },
+  {
+    "id": "q2",
+    "type": "mc",
+    "pain": 1,
+    "q": "Why is wrong GL coding a compliance problem in NDIS — not just an admin headache?",
+    "options": [
+      "It slows down accounting software",
+      "Participant funding gets charged incorrectly, breaching NDIS obligations",
+      "It makes the CFO report look bad",
+      "It delays payroll"
+    ],
+    "correct": 1,
+    "explanation": "Coding errors in NDIS orgs can mean a participant's budget gets charged for things it shouldn't. That's a regulatory breach, not a spreadsheet problem."
+  },
+  {
+    "id": "q3",
+    "type": "mc",
+    "pain": 2,
+    "q": "One card, four staff, mystery $340. What's the worst consequence?",
+    "options": [
+      "Finance has to make an extra call",
+      "The amount is too small to matter",
+      "They cannot produce an audit trail — fraud risk and audit exposure",
+      "The wrong cost centre gets charged"
+    ],
+    "correct": 2,
+    "explanation": "Shared cards eliminate accountability entirely. If an auditor asks who spent $340 and why, finance literally cannot answer."
+  },
+  {
+    "id": "q4",
+    "type": "mc",
+    "pain": 3,
+    "q": "A staff member makes a personal purchase on the company card. The manager declines it in the approval system. What happens to the money?",
+    "options": [
+      "It gets reversed to the company account",
+      "Nothing — the money left when the card was tapped",
+      "Finance recovers it from next payroll",
+      "The bank reverses it automatically"
+    ],
+    "correct": 1,
+    "explanation": "All card approvals are post-spend. The money left the moment the card was tapped. Declining creates a record for disciplinary action — but doesn't reverse the spend."
+  },
+  {
+    "id": "q5",
+    "type": "mc",
+    "pain": 3,
+    "q": "The GM goes on leave for two weeks. What happens to the approval queue?",
+    "options": [
+      "Another manager covers it",
+      "It stops — 200 transactions pile up, rubber-stamped or reviewed too late",
+      "Transactions auto-approve after 48 hours",
+      "Finance approves instead"
+    ],
+    "correct": 1,
+    "explanation": "One person = one point of failure. When they're gone the queue dies. When they return: rubber stamp or days of review. Neither is a real control."
+  },
+  {
+    "id": "q6",
+    "type": "mc",
+    "pain": 4,
+    "q": "What date does finance typically get a clean view of last month's spend?",
+    "options": [
+      "Last day of the month",
+      "1st-3rd of next month",
+      "14th-15th of next month",
+      "Within a week"
+    ],
+    "correct": 2,
+    "explanation": "Halfway through the next month. Halfway through November before October is closed. By then they're already deep in November's chaos."
+  },
+  {
+    "id": "q7",
+    "type": "fitb",
+    "pain": 4,
+    "q": "Month-end is a ___________ on every broken process above it.",
+    "blank": "tax",
+    "hint": "Financial consequence word",
+    "explanation": "Month-end isn't a separate problem. It's the accumulated cost of missing receipts, wrong coding, shared cards, and broken approvals all hitting at once."
+  },
+  {
+    "id": "q8",
+    "type": "fitb",
+    "pain": 2,
+    "q": "Shared cards destroy accountability and ___________ trails.",
+    "blank": "audit",
+    "hint": "What do auditors check?",
+    "explanation": "Without individual attribution there is no audit trail. You can't reconstruct who spent what when the information was never captured."
+  },
+  {
+    "id": "q9",
+    "type": "fitb",
+    "pain": 3,
+    "q": "On a corporate card, a declined approval is a ___________ tool, not a financial control.",
+    "blank": "compliance",
+    "hint": "What is it useful for?",
+    "explanation": "Declining creates a paper trail — proof the spend wasn't authorised. That supports disciplinary action. But the money is already gone. Real card controls are pre-spend: limits, restrictions, individual attribution."
+  },
+  {
+    "id": "q10",
+    "type": "scenario",
+    "pain": 0,
+    "context": "Finance manager: We tried to tighten up our expense process last year. Put in a new policy, sent it to all staff. It lasted about two months then everything went back to how it was.",
+    "q": "What do you say?",
+    "options": [
+      "That's unfortunate — what policy did you try?",
+      "That's exactly what we hear from every org. The problem isn't the policy or the staff — it's that you're relying on non-finance people to do finance tasks correctly under pressure. That never sticks.",
+      "You probably need a stricter policy and better enforcement.",
+      "It sounds like a training issue — have you tried more frequent reminders?"
+    ],
+    "correct": 1,
+    "explanation": "Acknowledge the norm, then reframe. The problem is system design. Behaviour fixes don't stick because the system itself is broken."
+  },
+  {
+    "id": "q11",
+    "type": "scenario",
+    "pain": 2,
+    "context": "Prospect: We've got about 40 support workers across 8 houses. They use a shared card at each house. It works okay for the most part.",
+    "q": "What do you ask next?",
+    "options": [
+      "How many transactions per month?",
+      "If I pulled up any one of those transactions right now, could you tell me which of the 40 staff made that purchase?",
+      "Have you considered virtual cards?",
+      "What bank are you with?"
+    ],
+    "correct": 1,
+    "explanation": "If the answer is no — and it almost always is — the entire accountability problem is exposed in one answer. Don't attack 'it works okay', just probe underneath it."
+  },
+  {
+    "id": "q12",
+    "type": "scenario",
+    "pain": 3,
+    "context": "Finance manager: We have a solid approval process — every expense gets reviewed by a manager before we process it.",
+    "q": "What do you ask?",
+    "options": [
+      "Great — how long does that take?",
+      "Is that mostly card transactions or expense reimbursements? Because they work pretty differently — on card spend the money is already gone before it hits the approval queue.",
+      "How many approvers do you have?",
+      "What system do you use for that?"
+    ],
+    "correct": 1,
+    "explanation": "Card approvals are post-spend — the money is already gone. Reimbursement approvals have real teeth. Most people don't know the difference. This question opens that up."
+  }
+]

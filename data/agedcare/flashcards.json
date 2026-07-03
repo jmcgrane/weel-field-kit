@@ -1,0 +1,92 @@
+[
+  {
+    "id": "f1",
+    "pain": 0,
+    "q": "What does a support worker do with a receipt after a 10pm shift?",
+    "a": "Shoves it in their pocket, puts their uniform in the wash, receipt is gone. They don't think about it again."
+  },
+  {
+    "id": "f2",
+    "pain": 0,
+    "q": "Why does finance chase receipts all month-end?",
+    "a": "They can't code or close a transaction without a receipt. Multiply by 50 staff — that's their entire job. Not analysis — chasing paper."
+  },
+  {
+    "id": "f3",
+    "pain": 0,
+    "q": "Best opening question for Missing Receipts?",
+    "a": "When a receipt doesn't come in, whose job is it to chase it? And what happens if they never get it?"
+  },
+  {
+    "id": "f4",
+    "pain": 1,
+    "q": "What happens when a support worker sees 200 GL cost centres?",
+    "a": "They pick the closest-looking one, always use the same one, or leave it blank. It will be wrong. Every time."
+  },
+  {
+    "id": "f5",
+    "pain": 1,
+    "q": "Why is wrong GL coding a compliance risk in NDIS?",
+    "a": "A participant's budget gets charged for things it shouldn't. That's not an admin problem — that's a funding compliance problem."
+  },
+  {
+    "id": "f6",
+    "pain": 1,
+    "q": "Why will training never fix wrong coding?",
+    "a": "It's a system design problem, not a behaviour problem. You're asking a carer to make an accounting decision at the end of a long shift. That will always fail."
+  },
+  {
+    "id": "f7",
+    "pain": 2,
+    "q": "A $340 hardware charge appears on a shared card. What can finance prove?",
+    "a": "Nothing. They can't identify which of 4 staff used it, what it was for, or who authorised it. An auditor could destroy them."
+  },
+  {
+    "id": "f8",
+    "pain": 2,
+    "q": "What question instantly exposes the shared card problem?",
+    "a": "When you look at a transaction on your card statement, can you tell me which staff member made that purchase?"
+  },
+  {
+    "id": "f9",
+    "pain": 2,
+    "q": "What makes shared cards uniquely unrecoverable?",
+    "a": "The information to verify who spent what was never captured. You can't reconstruct what never existed."
+  },
+  {
+    "id": "f10",
+    "pain": 3,
+    "q": "Are approvals a pre-spend or post-spend control?",
+    "a": "Post-spend. Always. The money left the account the moment the card was tapped. Approvals happen after the fact."
+  },
+  {
+    "id": "f11",
+    "pain": 3,
+    "q": "What are the two approval scenarios and how do they differ?",
+    "a": "Card spend: money already gone, approval is audit trail only — can't reverse the spend. Reimbursement: employee paid their own money, decline it and the company's money never moves. Real teeth."
+  },
+  {
+    "id": "f12",
+    "pain": 3,
+    "q": "What is the one question that exposes a fake approval process?",
+    "a": "When your approver clicks approve — what are they actually able to verify in that moment? Almost nobody can answer this well."
+  },
+  {
+    "id": "f13",
+    "pain": 3,
+    "q": "What happens to the approval queue when the GM goes on leave?",
+    "a": "It stops. 200 transactions pile up. They either rubber-stamp everything when they return (pointless) or review properly (takes days, month-end is tomorrow)."
+  },
+  {
+    "id": "f14",
+    "pain": 4,
+    "q": "When does month-end pain typically resolve?",
+    "a": "14th-15th of the following month. Halfway through November before they know what happened in October."
+  },
+  {
+    "id": "f15",
+    "pain": 4,
+    "q": "What is the ONE root cause connecting all 5 pains?",
+    "a": "The people spending money are not finance people. Every system relies on them doing the right thing. They won't — not because they're bad, because it's not their job."
+  }
+]

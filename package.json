@@ -1,0 +1,10 @@
+{
+  "name": "weel-field-kit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Weel BDR Field Kit — multi-industry training tool",
+  "scripts": {
+    "dev": "node server.js",
+    "validate": "node scripts/validate-content.js"
+  }
+}
