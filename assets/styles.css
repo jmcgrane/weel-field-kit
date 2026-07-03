@@ -1,4 +1,12 @@
+@font-face{font-family:'Aeonik';src:url('fonts/aeonik/Aeonik-Regular.woff2') format('woff2'),url('fonts/aeonik/Aeonik-Regular.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Aeonik';src:url('fonts/aeonik/Aeonik-RegularItalic.woff2') format('woff2'),url('fonts/aeonik/Aeonik-RegularItalic.woff') format('woff');font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:'Aeonik';src:url('fonts/aeonik/Aeonik-Medium.woff2') format('woff2'),url('fonts/aeonik/Aeonik-Medium.woff') format('woff');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:'Aeonik';src:url('fonts/aeonik/Aeonik-MediumItalic.woff2') format('woff2'),url('fonts/aeonik/Aeonik-MediumItalic.woff') format('woff');font-weight:500;font-style:italic;font-display:swap}
+@font-face{font-family:'Aeonik';src:url('fonts/aeonik/Aeonik-Bold.woff2') format('woff2'),url('fonts/aeonik/Aeonik-Bold.woff') format('woff');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:'Aeonik';src:url('fonts/aeonik/Aeonik-BoldItalic.woff2') format('woff2'),url('fonts/aeonik/Aeonik-BoldItalic.woff') format('woff');font-weight:700;font-style:italic;font-display:swap}
+
 :root{
+  --font-sans:'Aeonik','Helvetica Neue','Helvetica','Inter','Arial',sans-serif;
   --bg:#f3f0e9;
   --surface:#ffffff;
   --surface-2:#faf7f0;
@@ -9,9 +17,13 @@
   --text-2:#525252;
   --text-3:#8a847a;
   --accent:#0a0a0a;
-  --highlight:#d6371f;
-  --highlight-bg:#fbeae5;
-  --highlight-border:#f3cdc1;
+  /* Brand green, sampled from the Weel mark and darkened for legible text/UI
+     use (the mark's bright lime reads poorly as small text). The true bright
+     tone is kept as --brand-lime for decorative, large-surface use only. */
+  --highlight:#5c7a08;
+  --highlight-bg:#f2f4eb;
+  --highlight-border:#dbe2c9;
+  --brand-lime:#a3d80f;
   --green:#15803d;
   --green-bg:#ecf3ed;
   --green-border:#cee0d2;
@@ -40,7 +52,8 @@
 body{
   background:var(--bg);
   color:var(--text);
-  font-family:'Helvetica Neue','Helvetica','Inter','Arial',sans-serif;
+  font-family:var(--font-sans);
+  font-feature-settings:'lnum' 1, 'tnum' 1;
   font-weight:400;
   letter-spacing:-.005em;
   min-height:100vh;
@@ -53,7 +66,8 @@ body{
 #home{justify-content:flex-start;background:var(--bg)}
 .home-inner{max-width:680px;width:100%}
 .topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:48px}
-.brandmark{font-weight:800;font-size:13px;letter-spacing:.18em;color:var(--text)}
+.brandmark{display:flex;align-items:center;gap:10px;font-weight:800;font-size:13px;letter-spacing:.18em;color:var(--text)}
+.brandmark-logo{height:16px;width:auto;display:block}
 .brandmark span{color:var(--text-3);font-weight:500}
 .streak-badge{display:inline-flex;align-items:center;gap:6px;background:var(--surface);border:1px solid var(--border);padding:5px 11px;border-radius:99px;font-size:11px;color:var(--text-2);font-weight:500}
 .streak-badge strong{color:var(--text);font-weight:700}
