@@ -36,11 +36,16 @@ if (!Array.isArray(registry)) {
 
 console.log(`Found ${registry.length} industr${registry.length === 1 ? 'y' : 'ies'} in the registry.\n`);
 
+const accentCounts = {};
+registry.forEach((entry) => { if (entry.accent) accentCounts[entry.accent.toLowerCase()] = (accentCounts[entry.accent.toLowerCase()] || 0) + 1; });
+Object.entries(accentCounts).forEach(([accent, count]) => { if (count > 1) warn(`accent color ${accent} is reused by ${count} industries — each should be visually distinct`); });
+
 registry.forEach((entry) => {
   console.log(`── ${entry.id || '(missing id)'} ──────────────────────────`);
   if (!isNonEmptyString(entry.id)) fail('registry entry missing "id"');
   if (!isNonEmptyString(entry.label)) fail('registry entry missing "label"');
   if (!Array.isArray(entry.painNames)) warn('registry entry missing "painNames" (readiness widget will fall back to pain titles)');
+  if (!/^#[0-9a-fA-F]{6}$/.test(entry.accent || '')) warn('registry entry missing/invalid "accent" hex color (falls back to the default brand green)');
 
   const dir = path.join(DATA_DIR, entry.id || '');
   if (!fs.existsSync(dir)) {

@@ -53,10 +53,18 @@ at yet. Fill it in whenever the content exists.
    have yet.
 3. Add one entry to `data/industries.json`:
    ```json
-   { "id": "hospitality", "label": "Hospitality", "painNames": ["...", "...", "...", "...", "..."] }
+   { "id": "hospitality", "label": "Hospitality", "accent": "#e0a83d", "painNames": ["...", "...", "...", "...", "..."] }
    ```
    `painNames` is a short (1-2 word) label per pain, used on the home screen's
    readiness widget — order must match `pains.json`.
+
+   `accent` is a hex color, unique per industry — it's what makes each
+   section visually distinct (buttons, active states, the persistent badge,
+   headings all read from this one value, set at runtime). Pick something
+   that isn't already used by another industry and has decent contrast
+   against a near-black background (roughly luminance-checked against
+   `#121212` — anything reasonably bright/saturated works; avoid dark or
+   muddy tones since dark text sits on top of it for buttons).
 4. Run `npm run validate` — fixes anything malformed before it goes live.
 5. Run `npm run dev` and click through it.
 

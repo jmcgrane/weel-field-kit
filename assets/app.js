@@ -55,6 +55,7 @@ async function applyIndustry(id) {
   PAIN_NAMES = (meta && meta.painNames) || PAINS.map(function (p, i) { return 'Pain ' + (i + 1); });
 
   document.body.className = 'icp-' + id;
+  applyIndustryAccent(meta && meta.accent);
   applyIcpTextVisibility();
   renderIcpSwitcher();
   renderVerticalPlaybookSection();
@@ -80,6 +81,27 @@ function applyIcpTextVisibility() {
   document.querySelectorAll('.icp-text').forEach(function (el) {
     el.style.display = el.classList.contains(currentIndustry) ? '' : 'none';
   });
+}
+
+// Each industry gets its own accent color (set via "accent" in industries.json)
+// so the section you're in is visually obvious at a glance, on top of the
+// persistent name badge. Every accent-colored element in the app (buttons,
+// active states, the badge, headings) already reads from the single
+// --highlight CSS variable, so swapping it here is all that's needed —
+// no per-industry CSS to write or maintain.
+function darkenHex(hex, amount) {
+  var h = (hex || '#a3d80f').replace('#', '');
+  var r = parseInt(h.substring(0, 2), 16), g = parseInt(h.substring(2, 4), 16), b = parseInt(h.substring(4, 6), 16);
+  r = Math.round(r * (1 - amount)); g = Math.round(g * (1 - amount)); b = Math.round(b * (1 - amount));
+  function toHex(n) { return n.toString(16).padStart(2, '0'); }
+  return '#' + toHex(r) + toHex(g) + toHex(b);
+}
+function applyIndustryAccent(accent) {
+  var hex = accent || '#a3d80f';
+  var root = document.documentElement.style;
+  root.setProperty('--highlight', hex);
+  root.setProperty('--highlight-hover', darkenHex(hex, 0.12));
+  root.setProperty('--brand-lime', hex);
 }
 
 function renderIcpSwitcher() {

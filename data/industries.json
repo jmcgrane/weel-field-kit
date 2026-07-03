@@ -2,16 +2,19 @@
   {
     "id": "agedcare",
     "label": "Aged Care / NDIS",
+    "accent": "#a3d80f",
     "painNames": ["Receipts", "Coding", "Cards", "Approvals", "Month-End"]
   },
   {
     "id": "clinics",
     "label": "Multi-Site Clinics",
+    "accent": "#3dc7e0",
     "painNames": ["Sites", "Cards", "Receipts", "Approvals", "Lean Team"]
   },
   {
     "id": "hospitality",
     "label": "Hospitality",
+    "accent": "#e0a83d",
     "painNames": ["Cards", "Receipts", "Visibility", "Turnover", "Controls"]
   }
 ]
