@@ -135,7 +135,11 @@ registry.forEach((entry) => {
 
   const customers = readJSON(path.join(dir, 'customers.json'));
   if (Array.isArray(customers)) {
-    customers.forEach((c, i) => { if (!isNonEmptyString(c.industry) || !isNonEmptyString(c.businesses)) fail(`customers[${i}] needs "industry" and "businesses"`); });
+    customers.forEach((c, i) => {
+      const isSimple = isNonEmptyString(c.industry) && isNonEmptyString(c.businesses);
+      const isStory = isNonEmptyString(c.name) && isNonEmptyString(c.segment) && isNonEmptyString(c.challenge) && isNonEmptyString(c.solution) && isNonEmptyString(c.proof);
+      if (!isSimple && !isStory) fail(`customers[${i}] needs either "industry"+"businesses" (simple) or "name"+"segment"+"challenge"+"solution"+"proof" (story)`);
+    });
     ok(`customers.json — ${customers.length} item(s)${customers.length === 0 ? ' (tile hidden on home screen)' : ''}`);
   }
 

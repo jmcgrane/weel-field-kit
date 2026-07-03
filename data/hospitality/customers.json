@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Zeus Street Greek",
+    "segment": "Franchise group &middot; 13+ legal entities",
+    "challenge": "Rapid franchise growth across 13+ separate legal entities, each needing its own bank account, Xero file and approval controls.",
+    "solution": "Centralised multi-entity administration with deep Xero integration and multi-level approval workflows, piloted in a handful of new restaurants before full rollout.",
+    "proof": "13 entities onboarded, an expected +$760/month in revenue growth, and evaluated head-to-head against Airwallex on accounts payable functionality &mdash; Weel won the deal."
+  },
+  {
+    "name": "Grill'd",
+    "segment": "~200 restaurants &middot; national rollout",
+    "challenge": "Keeping card control and spend visibility consistent across 200-300 restaurant staff nationwide, while feeding clean data into NetSuite and Power BI.",
+    "solution": "A phased rollout with full NetSuite integration &mdash; single vendor import, GL coding &mdash; and commercial terms locked in at CFO level.",
+    "proof": "200-300 users rolled out across every location, with price stability guaranteed in perpetuity."
+  },
+  {
+    "name": "Ganley Group",
+    "segment": "6 hospitality venues &middot; single ownership group",
+    "challenge": "Manual receipt chasing and reconciliation across 6 venues under one ownership group, made worse by EOFY pressure and a head-office move.",
+    "solution": "Entity-by-entity onboarding &mdash; starting with a small pilot group including the General Manager &mdash; with Xero integration, auto-categorisation and receipt capture to cut manual admin.",
+    "proof": "All 6 venues live on a $430/month multi-entity plan, rated ahead of competitor Budgetly during evaluation."
+  },
+  {
+    "name": "Yo-Chi",
+    "segment": "60+ locations &middot; multiple entities",
+    "challenge": "Physical card delivery reliability across multiple venue entities, with delays disrupting day-to-day operations at store level.",
+    "solution": "Multi-venue card issuance backed by fast service recovery &mdash; fee waivers when delivery failed, rather than losing the relationship over an operational hiccup.",
+    "proof": "16 cards reissued across 2 entities, with $264 in fees waived as a goodwill and retention action."
+  }
+]

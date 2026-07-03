@@ -1,0 +1,9 @@
+[
+  { "title": "No more reliance on the manager's card", "text": "Individual budgets mean staff can spend from their own card, not a single shared manager card passed around the shift." },
+  { "title": "Receipt capture at point of spend", "text": "Staff photograph the receipt as they spend; OCR extracts merchant, amount and GST and matches it to the transaction automatically." },
+  { "title": "Real-time spend visibility", "text": "Finance sees what's been spent as it happens, not at the end of the month." },
+  { "title": "Multi-entity, multi-venue visibility", "text": "One consolidated dashboard for finance across every venue and every entity." },
+  { "title": "Budget controls per venue or department", "text": "Limits set per venue, per team (kitchen, FOH, maintenance) or per card, with real-time approval for anything over." },
+  { "title": "Dedicated subscription management", "text": "Head office manages every venue's subscriptions in one place instead of discovering dozens of scattered Spotify and Sky Sports accounts." },
+  { "title": "Instant card issuance &amp; freezing", "text": "A departing manager's card is cancelled instantly with no disruption to the venue; a new manager has a working card within seconds." }
+]

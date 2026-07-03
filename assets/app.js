@@ -212,6 +212,10 @@ function renderCardGrid(elId, items, introText) {
       return '<div class="wt-card"><div class="wt-card-title">' + it.title + '</div><div class="wt-card-text">' + it.text + '</div></div>';
     }).join('') + '</div>';
 }
+// Customers support two shapes: the simple {industry, businesses} directory
+// (used when all you have is a list of named accounts) and a richer
+// {name, segment, challenge, solution, proof} story format (used when real
+// case-study detail exists, e.g. from a sales deck). Detected automatically.
 function renderCustomers() {
   var el = document.getElementById('customers-body');
   if (!el) return;
@@ -219,7 +223,20 @@ function renderCustomers() {
     el.innerHTML = '<div class="pitch-box"><div class="pitch-text placeholder">[ Named customer wins and social proof for this industry go here — to be added. ]</div></div>';
     return;
   }
-  el.innerHTML = '<p class="pi-sub">Real, named customers already running Weel. Use these when a prospect asks &ldquo;who else uses this?&rdquo;</p><div class="wt-grid">'
+  var intro = '<p class="pi-sub">Real, named customers already running Weel. Use these when a prospect asks &ldquo;who else uses this?&rdquo;</p>';
+  if (CUSTOMERS[0].name) {
+    el.innerHTML = intro + CUSTOMERS.map(function (c) {
+      return '<div class="intg-card">'
+        + '<div class="intg-top"><div class="intg-name">' + c.name + '</div></div>'
+        + '<div class="intg-when">' + c.segment + '</div>'
+        + '<div class="pt-d-row"><strong>Challenge:</strong> ' + c.challenge + '</div>'
+        + '<div class="pt-d-row"><strong>Solution:</strong> ' + c.solution + '</div>'
+        + '<div class="pt-d-row"><strong>Proof:</strong> ' + c.proof + '</div>'
+        + '</div>';
+    }).join('');
+    return;
+  }
+  el.innerHTML = intro + '<div class="wt-grid">'
     + CUSTOMERS.map(function (c) {
       return '<div class="wt-card"><div class="wt-card-title">' + c.industry + '</div><div class="wt-card-text">' + c.businesses + '</div></div>';
     }).join('') + '</div>';

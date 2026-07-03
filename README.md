@@ -153,9 +153,29 @@ just a visual pill colour.
 
 ### `customers.json` (optional)
 
+Two supported shapes, detected automatically by whether an entry has `name`:
+
+**Simple** — just a directory of named accounts by industry:
+
 ```json
 [{ "industry": "GP", "businesses": "GP Collective &middot; Cornerstone Health" }]
 ```
+
+**Story** — used when real case-study detail exists (e.g. from a sales deck with named challenge/solution/proof-point slides):
+
+```json
+[{
+  "name": "Customer Name",
+  "segment": "Short descriptor, e.g. \"~200 restaurants &middot; national rollout\"",
+  "challenge": "What they came to Weel to solve.",
+  "solution": "What Weel actually did for them.",
+  "proof": "The quantified outcome — dollar figures, rollout numbers, a competitor beaten in evaluation, etc."
+}]
+```
+
+Don't mix invented detail into either shape — only add a customer once you have
+a real source (a case study, an account brief, a signed deal), never as a
+stand-in for open pipeline.
 
 ## Content pipeline — going from a Gong transcript to a finished industry
 
@@ -179,9 +199,18 @@ it's the repeatable process for the next one:
    rejecting, or already using, positioned honestly (including tools that are
    complementary rather than competitive, like ApprovalMax is for AP).
 6. **`customers.json`** — only add named customers here once you have an
-   actual source of truth for them (a real customer list), not from transcripts
-   alone — discovery calls are pipeline evidence, not proof of closed business.
+   actual source of truth for them: a real customer list, a case-study/sales
+   deck with named accounts and account-brief links, or similar. Discovery
+   calls with prospects are pipeline evidence, not proof of closed business —
+   don't promote a transcript into a customer entry. When richer detail
+   exists (challenge/solution/quantified proof, e.g. from a sales deck built
+   from Gong account briefs), use the "story" shape documented above instead
+   of the plain directory shape — it's a strictly better use of real data
+   when you have it.
 7. Drop the files in, register the industry, `npm run validate`, done.
+8. A source document doesn't have to be a transcript — a PowerPoint, PDF, or
+   any other file works the same way: hand it to Claude Code, point it at
+   this schema, and ask it to extract and structure the content the same way.
 
 ## Known limitations (fast-follow items, not blockers)
 

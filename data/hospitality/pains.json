@@ -1,0 +1,27 @@
+[
+  {
+    "num": "01",
+    "title": "Shared Cards & Cash Risk",
+    "summary": "Most hospitality groups still run spend through shared venue-manager cards or petty cash tins split across shifts. Whoever's rostered on hands the card to whoever needs to run out for something, and by the time a transaction hits the bank feed there's no way to tell who actually spent it, what it was for, or which venue it should sit against. Petty cash floats have the same problem in physical form &mdash; cash counted at the end of a shift, with no attribution and no real control over what it's spent on."
+  },
+  {
+    "num": "02",
+    "title": "Missing Receipts & Manual Reconciliation",
+    "summary": "The spend that actually happens in a venue is small, frequent and urgent &mdash; a supermarket run when an ingredient runs out mid-service, a same-day dishwasher repair, a handful of per-venue subscriptions nobody's tracking centrally. None of it waits for a purchase order, and none of it comes with a receipt finance can rely on. By month-end, finance is manually chasing paper for dozens of small transactions across every venue, and reconciliation becomes a race against EOFY or a head-office move rather than a routine task."
+  },
+  {
+    "num": "03",
+    "title": "Multi-Venue, Multi-Entity Visibility Gap",
+    "summary": "Head office sits in one place; venues are spread across multiple states, often under multiple legal entities each with their own bank account and accounting file. Finance has no way to physically check in on a venue, and nothing about a transaction surfaces until the bank feed, the petty cash count, or a reimbursement claim eventually arrives &mdash; by which point it's too late to do anything but record it. On top of that, venue staff aren't finance people, so GL coding is routinely wrong, and cleaning it up becomes head office's job, multiplied by however many venues and entities the group runs."
+  },
+  {
+    "num": "04",
+    "title": "Rotating Manager Churn & Card Handoff",
+    "summary": "Hospitality has some of the highest staff turnover of any industry, and venue managers are exactly the people holding the cards. When a manager leaves, their card, their float, and their unresolved receipts all leave with them &mdash; or worse, keep circulating informally among whoever's covering the shift. Every handover is a fresh chance for spend to go unattributed, subscriptions to be forgotten, or a card to end up frozen at the worst possible moment because nobody remembered to formally hand it over."
+  },
+  {
+    "num": "05",
+    "title": "Post-Hoc Controls, Not Pre-Spend Enforcement",
+    "summary": "Budget and category rules in most hospitality groups only get checked in a monthly review, long after the money's gone. Nothing stops a purchase at the point of sale &mdash; the control exists on paper, applied after the fact to spend that already happened. By the time anyone reviews it, the only options are to note it for next time or have an awkward conversation with a venue manager about something that can't be undone."
+  }
+]

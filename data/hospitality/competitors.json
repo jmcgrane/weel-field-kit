@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Budgetly",
+    "status": "Closest rival",
+    "statusClass": "tier",
+    "when": "The one hospitality competitor with genuine feature parity — comes up in almost every serious evaluation",
+    "angle": "The real like-for-like competitor: individual cards, instant issuance and point-of-sale budget enforcement all match on paper. Differentiate on execution and receipt-nudge reliability — and note that at least one hospitality customer evaluated Weel ahead of Budgetly and chose Weel."
+  },
+  {
+    "name": "ProSpend",
+    "status": "Comprehensive on paper",
+    "statusClass": "",
+    "when": "Comes up in formal multi-vendor evaluations, often alongside Concur",
+    "angle": "Strong across budgets, approvals and reporting, but card issuance and instant issuance are partial/add-on rather than native. Worth probing exactly how \"instant\" a replacement card really is in practice."
+  },
+  {
+    "name": "SAP Concur",
+    "status": "Legacy incumbent",
+    "statusClass": "tier",
+    "when": "Evaluated by larger multi-venue groups doing a formal software review",
+    "angle": "Enterprise-grade expense management bolted onto an existing bank card, not a native card issuer — no individual card issuance, no instant issuance, and no way to enforce a budget at the point of sale."
+  },
+  {
+    "name": "FlexiPurchase",
+    "status": "Expense tool, not a card issuer",
+    "statusClass": "uncommon",
+    "when": "Comes up when a group has looked at receipt/expense software rather than a card platform",
+    "angle": "No individual card issuance, no instant issuance, no per-venue real-time visibility, and no point-of-sale budget enforcement — sits closer to a receipt-management tool than a spend-control platform."
+  },
+  {
+    "name": "Webexpenses",
+    "status": "Reporting only",
+    "statusClass": "uncommon",
+    "when": "Surfaces alongside other UK-origin expense tools in a software review",
+    "angle": "An expense-management add-on, not a card issuer — no individual cards, no point-of-sale enforcement, so it can only ever report on spend after it's already happened."
+  },
+  {
+    "name": "Airwallex",
+    "status": "Strong on payments, weak on cards",
+    "statusClass": "",
+    "when": "Comes up with fast-growing, multi-entity groups already using Airwallex for FX or payments",
+    "angle": "Solid multi-entity visibility and reporting, but doesn't issue individually attributable cards the way Weel does. At least one fast-growing multi-entity franchise group evaluated Weel head-to-head against Airwallex — specifically on accounts payable functionality — and chose Weel."
+  }
+]

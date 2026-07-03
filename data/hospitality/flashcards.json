@@ -1,0 +1,17 @@
+[
+  { "id": "f1", "pain": 0, "q": "What happens when a venue manager's shared card gets used by whoever's rostered on that shift?", "a": "Nobody can tell who actually spent it, what it was for, or which venue it should be coded against." },
+  { "id": "f2", "pain": 0, "q": "What's the physical-cash equivalent of the shared-card problem in hospitality?", "a": "Petty cash tins split across shifts — counted at the end of a shift with no attribution and no real control over what it's spent on." },
+  { "id": "f3", "pain": 0, "q": "Best opening question to expose the shared-card/cash-risk pain?", "a": "When you look at a transaction on one of your venue cards, can you tell me which staff member made that purchase?" },
+  { "id": "f4", "pain": 1, "q": "What kind of purchases dominate day-to-day venue spend?", "a": "Small, frequent and urgent — a supermarket run mid-service, a same-day repair, per-venue subscriptions nobody's tracking centrally." },
+  { "id": "f5", "pain": 1, "q": "Why doesn't venue spend come with a reliable receipt?", "a": "None of it waits for a purchase order — it's bought in the moment, and by month-end nobody remembers to keep or hand over the receipt." },
+  { "id": "f6", "pain": 1, "q": "What makes hospitality reconciliation especially painful compared to other industries?", "a": "The volume of small transactions across every venue hits finance all at once, often worsened by EOFY timing or a head-office move." },
+  { "id": "f7", "pain": 2, "q": "Why can't finance just walk over and check on a venue's spending?", "a": "Head office sits in one place; venues are spread across multiple states, often under separate legal entities with their own bank accounts and accounting files." },
+  { "id": "f8", "pain": 2, "q": "When does a problem transaction typically surface for finance?", "a": "Only when the bank feed, the petty cash count, or a reimbursement claim eventually arrives — by which point it's too late to change anything." },
+  { "id": "f9", "pain": 2, "q": "Why is GL coding chronically wrong at the venue level?", "a": "Venue staff aren't finance people — coding cleanup becomes head office's job, multiplied across every venue and entity." },
+  { "id": "f10", "pain": 3, "q": "Why is manager turnover a special risk for card control in hospitality?", "a": "Venue managers are exactly the people holding the cards, and hospitality has some of the highest staff turnover of any industry." },
+  { "id": "f11", "pain": 3, "q": "What happens to a card, float and unresolved receipts when a manager leaves?", "a": "They either leave with the manager or keep circulating informally among whoever's covering the shift." },
+  { "id": "f12", "pain": 3, "q": "What's the ideal card experience when a manager leaves or a new one starts?", "a": "The old card is cancelled instantly without disrupting the venue's ability to spend, and the new manager gets a card within seconds." },
+  { "id": "f13", "pain": 4, "q": "When do budget and category rules typically get checked in most hospitality groups?", "a": "In a monthly review — long after the money's already gone." },
+  { "id": "f14", "pain": 4, "q": "Why is a 'control' that's only applied after spend happens not a real control?", "a": "It can't stop anything — the only options left are noting it for next time or having an awkward conversation about spend that can't be undone." },
+  { "id": "f15", "pain": 4, "q": "What's the alternative to post-hoc review?", "a": "Enforcing budgets and category rules at the point of sale, before the transaction is even approved." }
+]

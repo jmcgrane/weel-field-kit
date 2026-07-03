@@ -1,0 +1,9 @@
+[
+  { "title": "Multi-venue &amp; multi-entity card management", "text": "Cards and spend managed per venue across separate legal entities and Xero files, with one consolidated view for head office." },
+  { "title": "Instant card issuance &amp; manager handover", "text": "New managers get a working card in seconds; departing managers are cut off instantly, with no disruption to the venue." },
+  { "title": "Receipt capture &amp; auto-coding at point of spend", "text": "Photographed at the moment of purchase, OCR-matched, and coded automatically — no more chasing paper at month-end." },
+  { "title": "Real-time budget enforcement", "text": "Per-venue, per-department or per-card limits enforced before spend happens, not reviewed after the fact." },
+  { "title": "Subscription management across venues", "text": "One place to see and manage every recurring charge scattered across every venue's cards." },
+  { "title": "Reimbursements for out-of-pocket spend", "text": "Staff who pay personally get reimbursed quickly, without falling outside the same coding and approval rules as card spend." },
+  { "title": "Multi-entity consolidated reporting", "text": "One dashboard for finance to see spend across every venue and entity, instead of stitching together separate files." }
+]

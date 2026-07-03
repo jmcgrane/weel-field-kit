@@ -1,0 +1,32 @@
+[
+  {
+    "prospect": "Ops lead at a ~200-location QSR chain: “Head office handles all of that from our support office.”",
+    "ideal": "Mirror their exact terminology (support office, not head office) rather than translating it into generic language — this is a fast, low-risk way to signal fluency with how this kind of brand actually talks about its own business.",
+    "hook": "“Got it — so when a restaurant out in the network needs something urgent, how does the support office usually find out about it?”"
+  },
+  {
+    "prospect": "Finance lead at a franchise group: “Each of our stores has its own store card, but a couple have gone missing and staff don't always have a phone on them to freeze it.”",
+    "ideal": "Don't jump straight to pitching — repeat the specific failure mode back (lost card, no phone at the store) so they know you've actually heard the real operational problem, then connect it directly to centralized, phone-independent card freezing.",
+    "hook": "“That's exactly the gap centralized card freezing closes — you don't need a phone at the store, head office can freeze the card the second it's reported missing, from anywhere.”"
+  },
+  {
+    "prospect": "CFO at a multi-venue hospitality group: “We already declined AP automation when a vendor pitched it earlier this year — not interested in another tool.”",
+    "ideal": "Don't fight the objection or pivot straight into an AP pitch. Acknowledge it as the norm for this vertical, then redirect to cards and reimbursements — where the real, felt pain almost always is.",
+    "hook": "“Totally fair — AP is usually the last thing hospitality groups want to tackle first. Can I ask about how cards and out-of-pocket spend work across your venues instead? That's usually where the real pain is, and it's a much smaller lift to fix.”"
+  },
+  {
+    "prospect": "Finance manager at a restaurant group: “Our venue managers all have a card, and honestly it works okay — sometimes their assistant manager uses it too when they're not around.”",
+    "ideal": "Don't attack \"it works okay\" — probe underneath it with a concrete, unanswerable question about attribution, the same pattern that works across every vertical.",
+    "hook": "“If I pulled up a transaction from one of those cards right now, could you tell me whether it was the manager or the assistant manager who made it? That's usually the moment this stops feeling fine.”"
+  },
+  {
+    "prospect": "Operations director: “We're growing fast — about to open five more restaurants across three new states this year.”",
+    "ideal": "Reframe growth as a control problem before it becomes one — ask what happens to card issuance, receipt chasing and coding as venues multiply, rather than just congratulating the growth.",
+    "hook": "“Congrats — that's exciting. As you open those five, does the plan for issuing cards, chasing receipts and coding spend stay the same, or does someone at head office have to manually stand all of that up for every new site?”"
+  },
+  {
+    "prospect": "Franchise group CFO: “Manager turnover is honestly brutal in this industry — we're used to it.”",
+    "ideal": "Validate that this is universal in hospitality, then connect it directly to the specific operational risk it creates for card control — cards, floats and receipts that don't get handed over cleanly.",
+    "hook": "“It really is universal in this industry. The part worth asking is: when a manager leaves with no notice, what actually happens to their card, their float, and whatever receipts they hadn't submitted yet? That's usually where things go missing.”"
+  }
+]

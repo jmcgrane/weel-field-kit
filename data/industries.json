@@ -8,5 +8,10 @@
     "id": "clinics",
     "label": "Multi-Site Clinics",
     "painNames": ["Sites", "Cards", "Receipts", "Approvals", "Lean Team"]
+  },
+  {
+    "id": "hospitality",
+    "label": "Hospitality",
+    "painNames": ["Cards", "Receipts", "Visibility", "Turnover", "Controls"]
   }
 ]
