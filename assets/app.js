@@ -244,7 +244,7 @@ function updateHomeUI() {
   document.getElementById('home-pct').textContent = pct + '%';
   document.getElementById('home-fill').style.width = pct + '%';
   document.getElementById('readiness-mini').innerHTML = PAINS.map(function (p, i) {
-    var score = getPainScore(i), col = score === 0 ? '#cdc7b9' : score < 40 ? '#be3826' : score < 70 ? '#b45309' : score < 85 ? '#1c4ed8' : '#15803d';
+    var score = getPainScore(i), col = score === 0 ? '#cdc7b9' : score < 40 ? '#EF5B49' : score < 70 ? '#F2A93C' : score < 85 ? '#5B8DEF' : '#2FB673';
     var label = PAIN_NAMES[i] || p.title || ('Pain ' + (i + 1));
     return '<div class="rm-item"><div style="font-weight:800;font-size:18px;color:' + col + ';margin-bottom:2px;letter-spacing:-.01em">' + (score > 0 ? score + '%' : String(i + 1)) + '</div><div style="font-size:10px;color:#8a847a;font-weight:600;letter-spacing:.04em;text-transform:uppercase">' + label + '</div><div class="rm-bar"><div class="rm-fill" style="width:' + score + '%;background:' + col + '"></div></div></div>';
   }).join('');
